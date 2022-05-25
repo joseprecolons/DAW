@@ -1,0 +1,61 @@
+import java.util.Scanner;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		float num1, num2, num3, num4, num5;
+		float numgran, numpetit;
+		float suma, mitjana;
+		
+		Scanner teclatnum = new Scanner (System.in);
+		
+		System.out.println("Introdueix el primer numero");
+		num1 = teclatnum.nextFloat();
+		System.out.println("Introdueix el segon numero");
+		num2 = teclatnum.nextFloat();
+		
+		if (num1 > num2) {
+			numgran = num1;
+			numpetit = num2;
+		} else {
+			numgran = num2;
+			numpetit = num1;
+		}
+		
+		System.out.println("Introdueix el tercer numero");
+		num3 = teclatnum.nextFloat();
+		
+		if (num3 > numgran) {
+			numgran = num3;
+		} else if (num3 < numpetit) {
+			numpetit = num3;
+		}
+		
+		System.out.println("Introdueix el quart numero");
+		num4 = teclatnum.nextFloat();
+		
+		if (num4 > numgran) {
+			numgran = num4;
+		} else if (num4 < numpetit) {
+			numpetit = num4;
+		}
+		
+		System.out.println("Introdueix el cinquè numero");
+		num5 = teclatnum.nextFloat();
+		
+		if (num5 > numgran) {
+			numgran = num5;
+		} else if (num5 < numpetit) {
+			numpetit = num5;
+		}
+		
+		suma = (num1 + num2 + num3 + num4 + num5 - numgran - numpetit);
+		mitjana = (suma / 3f);
+		
+		System.out.println("Aquest es el resultat de la suma sense el numero mes gran y el mes petit " + suma);
+		System.out.println("Aquesta es la mitja sense el numero mes gran i sense el mes petit " + mitjana);
+		teclatnum.close();
+	}
+
+}

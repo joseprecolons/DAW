@@ -1,0 +1,17 @@
+Llista les pelis que no són de "Marvel Enterprises".
+
+mysql> SELECT titol_peli "Pelicula", produ_peli "Productora"
+    -> FROM PELLICULES
+    -> WHERE produ_peli != "Marvel Enterprises";
++----------------------------------+-------------------------+
+| Pelicula                         | Productora              |
++----------------------------------+-------------------------+
+| La busqueda                      | Jerry Bruckheimer Films |
+| La terminal                      | Dreamworks              |
+| Mar adentro                      | Sogepaq                 |
+| Colateral                        | Paramount               |
+| Los 4 fantásticos                | Paramount               |
+| Sin City                         | Dreamworks              |
+| La busqueda 2: El diario secreto | Jerry Bruckheimer Films |
++----------------------------------+-------------------------+
+7 rows in set (0.00 sec)

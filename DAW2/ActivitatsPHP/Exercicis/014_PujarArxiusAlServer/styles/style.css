@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+
+li {
+    flex-grow: 1;
+}
+
+menu li input {
+    width: 100%;
+}
+
+.img-fluid {
+    width: 600px !important;
+    height: 250px !important;
+}
+
+#carrusel {
+    width: 600px !important;
+    height: 250px !important;
+}
+
+/* #carouselExampleControlsinner {
+   width: 50%;
+}
+
+img {
+width: 500px;
+height: 300px;
+} */

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.lir.stackslotalloc.StackSlotAllocatorUtil"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="Fraction"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Rentadora"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Electrodomestic"/>
+    <fullyQualifiedTypeName name="Treballador"/>
+    <fullyQualifiedTypeName name="VehicleHerencia"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="Mascotas"/>
+    <fullyQualifiedTypeName name="Vehicle"/>
+    <fullyQualifiedTypeName name="Terrestre"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="Aquatic"/>
+    <fullyQualifiedTypeName name="Helicopter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="PersonatgeIntel_ligencia"/>
+    <fullyQualifiedTypeName name="RecolonsJosep.Fitxa"/>
+    <fullyQualifiedTypeName name="RecolonsJosep.Biblioteca"/>
+</qualifiedTypeNameHistroy>

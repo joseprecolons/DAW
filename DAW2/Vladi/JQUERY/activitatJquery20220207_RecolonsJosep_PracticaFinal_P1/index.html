@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Manipulació del DOM</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script>
+
+    //Posicionar de manera random els negritos
+    function negritosRng(width, height){
+      $(".negritos").animate({
+          marginTop: (Math.random() * (height - 0) + 0) + "px",
+          marginLeft: (Math.random() * (width - 0) + 0) + "px"
+        });
+    }
+
+    //Fer el moviment adient als monitos
+    function monitosMove(x, margin) {  
+      (margin)?$(".monitos").animate({marginTop: x + "px"}):$(".monitos").animate({marginLeft: x + "px"});
+    }
+
+    //Agafar la posició de la imatge
+    function posImg() {
+      return $(".monitos").offset();
+    }
+
+    $(document).ready(function () {
+      //Tamany de la finestra, restantli el tamany de les imatges per que no sortin del marge
+      let width = $(window).width() - 300;
+      let height = $(window).height() - 200;
+
+      //Apareixen les imatges random al entrar a la pàgina
+      $(".monitos").css("margin-top", (Math.random() * (height - 0) + 0) + "px").css("margin-left", (Math.random() * (width - 0) + 0) + "px");
+      $(".negritos").css("margin-top", (Math.random() * (height - 0) + 0) + "px").css("margin-left", (Math.random() * (width - 0) + 0) + "px");
+
+      //Clic a la flecha cap abaix
+      $(".down").click(function () {
+        let posicion = posImg();
+
+        //Comprova que no surt dels marges en el següent moviment
+        var x = ((posicion.top + 70) < height) ? (posicion.top + 70) : "";
+        monitosMove(x, true);
+        negritosRng(width, height);
+      });
+
+      $(".up").click(function () {
+        let posicion = posImg();
+
+        //Comprova que no surt dels marges en el següent moviment
+        var x = ((posicion.top - 70) > 0) ? (posicion.top - 70) : "";
+        $(".monitos").animate({
+          marginTop: x + "px",
+        });
+        monitosMove(x, true);
+        negritosRng(width, height);
+      });
+
+      $(".right").click(function () {
+        let posicion = posImg();
+
+        //Comprova que no surt dels marges en el següent moviment
+        var x = ((posicion.left + 120) < width) ? (posicion.left + 120) : "";
+        $(".monitos").animate({
+          marginLeft: x + "px",
+        });
+        monitosMove(x, false);
+        negritosRng(width, height);
+      });
+
+      $(".left").click(function () {
+        let posicion = posImg();
+
+        //Comprova que no surt dels marges en el següent moviment
+        var x = ((posicion.left - 120) > 0) ? (posicion.left - 120) : "";
+        $(".monitos").animate({
+          marginLeft: x + "px",
+        });
+        monitosMove(x, false);
+        negritosRng(width, height);
+      });
+
+      //Amaga la imatge, al fer-hi click
+      $(".negritos").click(function(){
+        $(".negritos").hide();
+      });
+
+      //Ensenya la imatge amagada, al fer click a la imatge1
+      $(".monitos").click(function(){
+        $(".negritos").show();
+      });
+    });
+  </script>
+  <style>
+    html {
+      font-size: 20px;
+      overflow: hidden;
+    }
+
+    .divArrows {
+      position: fixed;
+      top: 85%;
+      left: 5%;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+      position: absolute;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <img src="imgs/monitos.jpg" class="monitos">
+  </div>
+  <div>
+    <img src="imgs/negritos.jpg" class="negritos">
+  </div>
+  <div class="divArrows">
+    <button class="up" id="bArrows" style="margin-left: 2.45em;"><i class="fas fa-arrow-up"></i></button><br>
+    <button class="left" id="bArrows"><i class="fas fa-arrow-left"></i></button>
+    <button class="down" id="bArrows"><i class="fas fa-arrow-down"></i></button>
+    <button class="right" id="bArrows"><i class="fas fa-arrow-right"></i></button>
+  </div>
+</body>
+</html>

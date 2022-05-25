@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double preucompra;
+		double descompte;
+		double preuambdte;
+		double importiva;
+		double preufinal;
+		
+		Scanner teclatpreu = new Scanner (System.in);
+		
+		System.out.println("Introdueix el preu de la compra");
+		preucompra = teclatpreu.nextFloat();
+		
+		if (preucompra < 200) {
+			
+			descompte = (preucompra * 0.15);
+			
+		} else {
+			
+			descompte = 0;
+			
+		}
+		
+		preuambdte = (preucompra - descompte);
+		importiva = (preuambdte * 0.21);
+		preufinal = (preuambdte + importiva);
+		
+		System.out.println("El preu final es de " + preufinal);
+		
+		teclatnum.close();
+	}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestió de finestres</title>
+</head>
+<body>
+    <h2>Obrir finestres</h2>
+    <button onclick="openWindow(0)">Finestra 1</button>
+    <button onclick="openWindow(1)">Finestra 2</button>
+
+    <h2>Seleccionar finestres</h2>
+    <button onclick="focusWindow(0)">Finestra 1</button>
+    <button onclick="focusWindow(1)">Finestra 2</button>
+
+    <h2>Moure finestra</h2>
+    <button onclick="moveWindow(-50, 0)">esquerra</button>
+    <button onclick="moveWindow(0, 50)">abaix</button>
+    <button onclick="moveWindow(0, -50)">amunt</button>
+    <button onclick="moveWindow(50, 0)">dreta</button>
+
+    <h2>Redimensionar finestra</h2>
+    <button onclick="reSize(1)">+ Gran</button>
+    <button onclick="reSize(-1)">- Petit</button>
+
+    <h2>Tancar finestres</h2>
+    <button onclick="closeWindow(0)">Finestra 1</button>
+    <button onclick="closeWindow(1)">Finestra 2</button>
+    
+</body>
+
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,5 @@
+Simplement creant un onclick, a cada cela de la taula, en el cual cridarà una funció, 
+i li pasarà per parametres el dia, el més i l'any, aquesta funció obrirà el alert per intruduir 
+el missatge, i al acceptar el alert, el missatge passarà a la cela del dia, i guardarem tant el 
+dia, més i any, com el missatges, en un txt, separat tot entre ell per exemple per ";" 
+o al local storage aquest.

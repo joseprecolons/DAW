@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Selectors CSS i jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function(){
+                $(".vermell").click(function(){
+                    $("p").attr("style","color: red;");
+                });
+                $(".blau").click(function(){
+                    $("p").attr("style", "color: blue;");
+                });
+                $(".verd").click(function(){
+                    $("p").attr("style", "color: green;");
+                });
+                $(".noColor").click(function(){
+                    $("p").attr("style", "color: black;");
+                });
+                /*-----------------------*/
+                $(".changeimg").click(function(){
+                    $("img").toggleClass("img1");
+                });
+
+                $(".changeborder").click(function(){
+                    $("img").toggleClass("borderFuera");
+                });
+
+
+
+        	});
+        </script>
+        <style>
+            .img1 {
+                content:url(imgs/cursedBaby.jpg);
+            }
+
+            .borderFuera {
+                border: none !important;
+            }
+          
+            </style>
+    </head>
+    <body>
+        <p>paragraf 1</p>
+        <p>paragraf 2</p>
+        <p>paragraf 3</p>
+        <button class="vermell">vermell</button>
+        <button class="blau">blau</button>
+        <button class="verd">verd</button>
+        <button class="noColor">treure colors</button>
+
+        <br><br><br>
+
+        <img src="imgs/cursedDog.png" style="width: 300px; border: 5px solid black;">
+        <br>
+        <button class="changeimg">Cambiar imatge</button>
+        <button class="changeborder">Quitar y poner borde</button>
+    </body>
+</html>

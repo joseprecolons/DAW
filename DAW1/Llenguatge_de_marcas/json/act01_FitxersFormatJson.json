@@ -1,0 +1,60 @@
+{
+    "habitatge": {
+      "habitatge": [
+        {
+          "carrer": "Lope Mateo",
+          "numero": 18,
+          "plantaporta": 11,
+          "persona": [
+            {
+              "nif": "73829405H",
+              "nom": "Pedro",
+              "cognoms": "Garcia González",
+              "naixement": "4/8/1970",
+              "sexe": "Home"
+            },
+            {
+              "nif": "738254355H",
+              "nom": "Pedro2",
+              "cognoms": "Garcia González",
+              "naixement": "4/8/1950",
+              "sexe": "Dona"
+            }
+          ]
+        },
+        {
+          "carrer": "Victor Català",
+          "numero": 16,
+          "plantaporta": 45,
+          "persona": [
+            {
+              "nif": "34287456K",
+              "nom": "Marc",
+              "cognoms": "Martínez Diaz",
+              "naixement": "7/1/1984",
+              "sexe": "Home"
+            },
+            {
+              "nif": "84365298S",
+              "nom": "Marta",
+              "cognoms": "Muñoz López",
+              "naixement": "23/4/1980",
+              "sexe": "Dona"
+            }
+          ]
+        },
+        {
+          "carrer": "Victor Català",
+          "numero": 34,
+          "plantaporta": 65,
+          "persona": {
+            "nif": "83234534S",
+            "nom": "Sole",
+            "cognoms": "Garcia López",
+            "naixement": "23/4/1990",
+            "sexe": "Dona"
+          }
+        }
+      ]
+    }
+  }

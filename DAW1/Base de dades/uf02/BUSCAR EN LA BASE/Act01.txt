@@ -1,0 +1,97 @@
+Mostra l'estructura de totes les taules de la BD.
+
+mysql> show tables;
++---------------------+
+| Tables_in_videoclub |
++---------------------+
+| ACTORS              |
+| ACTORS_PELLICULES   |
+| DIRECTORS           |
+| EXEMPLARS           |
+| PELLICULES          |
+| PRESTECS            |
+| SOCIS               |
++---------------------+
+7 rows in set (0.00 sec)
+
+mysql> desc ACTORS;
++---------------+----------------------+------+-----+---------+-------+
+| Field         | Type                 | Null | Key | Default | Extra |
++---------------+----------------------+------+-----+---------+-------+
+| id_actor      | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| nom_actor     | varchar(30)          | YES  |     | NULL    |       |
+| nacio_actor   | varchar(20)          | YES  |     | NULL    |       |
+| anynaix_actor | smallint(5) unsigned | YES  |     | NULL    |       |
+| sexe_actor    | varchar(6)           | YES  |     | NULL    |       |
++---------------+----------------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+mysql> desc ACTORS_PELLICULES;
++-----------+----------------------+------+-----+---------+-------+
+| Field     | Type                 | Null | Key | Default | Extra |
++-----------+----------------------+------+-----+---------+-------+
+| id_peli   | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| id_actor  | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| papel     | varchar(30)          | YES  |     | NULL    |       |
+| principal | tinyint(1)           | YES  |     | NULL    |       |
++-----------+----------------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> desc DIRECTORS;
++------------+----------------------+------+-----+---------+-------+
+| Field      | Type                 | Null | Key | Default | Extra |
++------------+----------------------+------+-----+---------+-------+
+| id_dire    | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| nom_dire   | varchar(30)          | YES  |     | NULL    |       |
+| nacio_dire | varchar(20)          | YES  |     | NULL    |       |
++------------+----------------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc EXEMPLARS;
++----------------+----------------------+------+-----+---------+-------+
+| Field          | Type                 | Null | Key | Default | Extra |
++----------------+----------------------+------+-----+---------+-------+
+| id_peli        | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| num_exemplar   | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| estat_exemplar | varchar(15)          | YES  |     | NULL    |       |
++----------------+----------------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc PELLICULES;
++-----------------+----------------------+------+-----+---------+-------+
+| Field           | Type                 | Null | Key | Default | Extra |
++-----------------+----------------------+------+-----+---------+-------+
+| id_peli         | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| titol_peli      | varchar(40)          | YES  |     | NULL    |       |
+| nacio_peli      | varchar(20)          | YES  |     | NULL    |       |
+| produ_peli      | varchar(25)          | YES  |     | NULL    |       |
+| any_peli        | smallint(5) unsigned | YES  |     | NULL    |       |
+| id_dire_peli    | smallint(5) unsigned | YES  | MUL | NULL    |       |
+| recaudacio_peli | bigint(20) unsigned  | YES  |     | NULL    |       |
+| pressupost_peli | bigint(20) unsigned  | YES  |     | NULL    |       |
++-----------------+----------------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> desc PRESTECS;
++--------------+----------------------+------+-----+---------+-------+
+| Field        | Type                 | Null | Key | Default | Extra |
++--------------+----------------------+------+-----+---------+-------+
+| id_soci      | varchar(10)          | YES  | MUL | NULL    |       |
+| id_peli      | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| num_exemplar | smallint(5) unsigned | NO   | PRI | NULL    |       |
+| data_prestec | date                 | NO   | PRI | NULL    |       |
+| data_retorn  | date                 | YES  |     | NULL    |       |
++--------------+----------------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> desc SOCIS;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| id_soci     | varchar(10) | NO   | PRI | NULL    |       |
+| nom_soci    | varchar(30) | YES  |     | NULL    |       |
+| add_soci    | varchar(50) | YES  |     | NULL    |       |
+| tel_soci    | varchar(10) | YES  |     | NULL    |       |
+| id_avalista | varchar(10) | YES  | MUL | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)

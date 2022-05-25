@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2185B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Mis tareas"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvTareas"
+        android:layout_width="349dp"
+        android:layout_height="458dp"
+        android:layout_marginTop="40dp"
+        android:background="#FF80AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btNuevaTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:longClickable="false"
+        android:onClick="nuevaTarea"
+        app:backgroundTint="#C2185B"
+        app:backgroundTintMode="add"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="@+id/lvTareas"
+        app:layout_constraintEnd_toEndOf="@+id/lvTareas"
+        app:maxImageSize="50dp"
+        app:rippleColor="#1976D2"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:useCompatPadding="false" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="109dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvTareas"
+        app:layout_constraintVertical_bias="0.175">
+
+        <RadioButton
+            android:id="@+id/rbPink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="theme"
+            android:text="Pink" />
+
+        <RadioButton
+            android:id="@+id/rbSky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="theme"
+            android:text="Sky" />
+
+        <RadioButton
+            android:id="@+id/rbDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="theme"
+            android:text="Dark" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

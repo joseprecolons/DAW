@@ -1,0 +1,18 @@
+import java.util.*;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num, div;
+		
+		pdiv = 1;
+		
+		Scanner teclatnum = new Scanner(System.in);
+		
+		System.out.println("De fins a quin número vols calcular els múltiples de 6?");
+
+		num = teclatnumnextInt();  
+	}
+
+}

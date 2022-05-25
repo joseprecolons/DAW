@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+
+        <h1 class="titulos"> HABITATGE <input type="text" class="contador1" id="contador" style="width: 5%;"></h1>
+        <div class="textq">
+            <p>Nom del carrer:<span class="punts">__</span><input type="text" class="textboxs" id="carrerP"></p> 
+            <p>Numero del pis:<span class="punts">_!</span><input type="text" id="numeroP"></p>
+            <p>Porta del pis:<span class="punts">____</span><input type="text" id="portaP"></p>
+        </div>
+        <div class="button">
+            <button onclick="myFunction()">SegüentHabitatge</button>
+            <button onclick="myFunction2()">AnteriorHabitatge</button>
+            <br>
+            <br>
+            <button onclick="afegirHabitatge()" class="buttonAfegir">Afegir Habitatge</button>
+            <button onclick="borrar()" class="buttonBorrar">Borrar Habitatge</button>
+        </div>
+        <br>
+        <h2 class="titulos"> HABITANT <input type="text" class="contador2" id="contador2" style="width: 5%";></h2>
+        <div class="textq">
+            <p>Nif:<span class="punts">___________</span><input type="text" id="nifHabitant"></p>
+            <p>Nom:<span class="punts">_________!</span><input type="text" id="nomHabitant"></p>
+            <p>Cognom:<span class="punts">______!</span><input type="text" id="cognomHabitant"></p>
+            <p>Data naixement:<span class="punts">_</span><input type="text" id="dataNaixHabitant"></span></p>
+            <p>Sexe:<span class="punts">_________!</span><input type="text" id="sexeHabitant"></p>
+        </div>
+        <div class="button">
+            <button onclick="myFunction3()">SegüentHabitant</button>
+            <button onclick="myFunction4()">AnteriorHabitant</button>
+            <br><br>
+            <button onclick="afegirHabitant()"  class="buttonAfegir">Afegir Habitant</button>
+            <button onclick="borrarHabitant()"  class="buttonBorrar">Borrar Habitant</button>
+        </div>  
+        <br>
+
+        <div class="button">
+            <button onclick="mostrar()" class="buttonq">Mostrar Actual</button>
+            <button onclick="modificar()"class="buttonq">Modificar Actual</button>
+        </div>
+        <!--<form>
+            <label>Habitatge: </label>
+            <input type="text" id="numHabitatge">
+            <label>Habitant: </label>
+            <input type="text" id="numHabitant">
+        </form>-->
+
+        <script>
+            var contingutJSON ={
+                "habitatge":[
+                    {
+                        "carrer":"carrer1",
+                        "numero":"numero1",
+                        "porta":"porta1",
+                        "habitants":[{"NIF":"4343242J", "nom":"josep1", "cognom":"recolons1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                        {"NIF":"4343242K", "nom":"josep2", "cognom":"recolons2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                        {"NIF":"4343242H", "nom":"josep3", "cognom":"recolons3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                    },
+                    {
+                        "carrer":"carrer2",
+                        "numero":"numero2",
+                        "porta":"porta2",
+                        "habitants":[{"NIF":"4343242J", "nom":"pol1", "cognom":"pavon1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                        {"NIF":"4343242K", "nom":"pol2", "cognom":"pavon2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                        {"NIF":"4343242H", "nom":"pol3", "cognom":"pavon3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                    },
+                    {
+                        "carrer":"carrer3",
+                        "numero":"numero3",
+                        "porta":"porta3",
+                        "habitants":[{"NIF":"4343242J", "nom":"marc1", "cognom":"garcia1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                        {"NIF":"4343242K", "nom":"marc2", "cognom":"garcia2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                        {"NIF":"4343242H", "nom":"marc3", "cognom":"garcia3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                    },
+                    {
+                        "carrer":"carrer4",
+                        "numero":"numero4",
+                        "porta":"porta4",
+                        "habitants":[{"NIF":"4343242J", "nom":"vladi1", "cognom":"bellavista1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                        {"NIF":"4343242K", "nom":"vladi2", "cognom":"bellavista2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                        {"NIF":"4343242H", "nom":"vladi3", "cognom":"bellavista3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                    },
+                    {
+                        "carrer":"carrer5",
+                        "numero":"numero5",
+                        "porta":"porta5",
+                        "habitants":[{"NIF":"4343242J", "nom":"joan1", "cognom":"pardo1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                        {"NIF":"4343242K", "nom":"joan2", "cognom":"pardo2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                        {"NIF":"4343242H", "nom":"joan3", "cognom":"pardo3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                    }
+                ]
+            };
+            </script>
+             <script src="funcions.js"></script>
+    </body>
+</html>

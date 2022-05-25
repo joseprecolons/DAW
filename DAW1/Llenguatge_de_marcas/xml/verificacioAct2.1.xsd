@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="denuncies">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="denuncia">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="numero" type="xs:integer"/>
+                        <xs:element name="data" type="xs:string"/>
+                        <xs:element name="hora" type="xs:string"/>
+                        <xs:element name="article" type="xs:integer"/>
+                        <xs:element name="multa" type="xs:string"/>
+                        <xs:element name="punts" type="xs:integer"/>
+                        <xs:element name="lloc" type="xs:string"/>
+                        <xs:element name="fet" type="xs:string"/>
+                        <xs:element name="grau" type="xs:string">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="lleu|greu|moltgreu"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="mesura" type="xs:string">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="grua|enganxament|retirada|immobilitzacio"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="matricula" type="xs:string"/>
+                        <xs:element name="marca" type="xs:string"/>
+                        <xs:element name="model" type="xs:string"/>
+                        <xs:element name="color" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+Igual que l'activitat 20 però sense fer servir BETWEEN.
+
+mysql> SELECT id_soci, data_prestec
+    -> FROM PRESTECS
+    -> WHERE id_soci = 4444 AND (data_prestec < "2017/12/23" OR data_prestec > "2018/1/6");
++---------+--------------+
+| id_soci | data_prestec |
++---------+--------------+
+| 4444    | 2017-11-25   |
+| 4444    | 2017-11-21   |
+| 4444    | 2017-11-10   |
++---------+--------------+
+3 rows in set (0.00 sec)

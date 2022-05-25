@@ -1,0 +1,7 @@
+El tema del temps, es bastant simple, a partir del primer clic que fas a un dels blocs, 
+comença a comptar els segons, fins que detecti que has acabat el puzzle, llavors el temps pararía,
+i surt l'alert amb la informació que s'hagi de donar.
+
+El puzzle, sería ordenar de manera random els blocs, els cuals estaríen posats a un array, 
+i a la que fas clic en un d'ells, amb una funció, miraría si te un espai en blanc al seu voltant, 
+si el te, cambiaría a aquell espai, sinó, es quedaría igual.

@@ -1,0 +1,37 @@
+Llista el títol de la peli, el nom del soci, la data de préstec i de retorn i el nombre de dies que han transcorregut des del préstec fins al retorn. 
+
+mysql> SELECT titol_peli Títol,
+    -> nom_soci Nom,
+    -> data_prestec Sortida,
+    -> data_retorn Entrada, 
+    -> data_retorn-data_prestec Dies
+    -> FROM PELLICULES t1,
+    -> SOCIS t2
+    -> , PRESTECS t3, 
+    -> EXEMPLARS t4
+    -> WHERE t3.id_soci = t2.id_soci AND
+    -> t3.id_peli = t4.id_peli AND
+    -> t3.num_exemplar = t4.num_exemplar AND
+    -> t4.id_peli = t1.id_peli;
++--------------------+-----------------+------------+------------+------+
+| Títol              | Nom             | Sortida    | Entrada    | Dies |
++--------------------+-----------------+------------+------------+------+
+| La busqueda        | Laura Loreto    | 2017-11-10 | 2017-11-11 |    1 |
+| La terminal        | Laura Loreto    | 2017-11-21 | 2017-11-22 |    1 |
+| Colateral          | Laura Loreto    | 2017-11-25 | 2017-11-26 |    1 |
+| Los 4 fantásticos  | Laura Loreto    | 2017-12-01 | 2017-12-02 |    1 |
+| Sin City           | Laura Loreto    | 2017-12-02 | 2017-12-04 |    2 |
+| La busqueda        | Sandra Sampedro | 2017-11-25 | 2017-11-26 |    1 |
+| La terminal        | Sandra Sampedro | 2017-11-21 | 2017-11-22 |    1 |
+| Mar adentro        | Sandra Sampedro | 2017-11-10 | 2017-11-11 |    1 |
+| Sin City           | Sandra Sampedro | 2017-12-01 | 2017-12-02 |    1 |
+| La terminal        | Ariadna Moreno  | 2017-11-25 | 2017-11-26 |    1 |
+| Mar adentro        | Ariadna Moreno  | 2017-11-21 | 2017-11-22 |    1 |
+| Sin City           | Ariadna Moreno  | 2017-11-10 | 2017-11-11 |    1 |
+| La busqueda        | Laura Gil       | 2017-12-06 | 2017-12-07 |    1 |
+| La terminal        | Laura Gil       | 2017-11-25 | 2017-11-26 |    1 |
+| Mar adentro        | Laura Gil       | 2017-12-01 | 2017-12-02 |    1 |
+| Colateral          | Laura Gil       | 2017-11-21 | 2017-11-22 |    1 |
+| Los 4 fantásticos  | Laura Gil       | 2017-11-10 | 2017-11-11 |    1 |
++--------------------+-----------------+------------+------------+------+
+17 rows in set (0.00 sec)

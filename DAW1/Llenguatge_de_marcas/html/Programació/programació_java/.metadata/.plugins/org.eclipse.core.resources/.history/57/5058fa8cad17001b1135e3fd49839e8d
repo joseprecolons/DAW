@@ -1,0 +1,22 @@
+import java.util.*;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n;
+		int comptador1 = 1;
+		
+		Scanner teclatnum = new Scanner(System.in);
+		
+		System.out.println("Introdueix un número");
+		n = teclatnum.nextInt();
+		
+		while (n >= comptador1) {
+			System.out.print("*");
+			comptador1++;
+		}
+		
+	}
+
+}

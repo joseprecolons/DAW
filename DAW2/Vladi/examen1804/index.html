@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estils.css" rel="stylesheet" type="text/css">
+    <title>Examen Josep</title>
+</head>
+
+<body>
+    <h1>Examen css 18/10 Josep Recolons</h1>
+
+    <h2>Funció 1</h2>
+    <p>* el cual fa que tota la pàgina sigui de color gris, igual que els elefants</p>
+    <div id="act1">
+    </div>
+
+    <hr>
+
+    <h2>Funció 2</h2>
+    <p>A * Selecciona el que hi ha dins de tots els articles, i en aquest cas posa el text de color verd</p>
+    <article id="act2">
+        <h1>Tigre</h1>
+        <h2>Girafa</h2>
+        <p>Elefant</p>
+    </article>
+
+    <hr>
+
+    <h2>Funció 3</h2>
+    <p>A + B Selecciona els elements amb la clase .animal que tenen davant un h3</p>
+    <div id="act3">
+        <h3>Gorila</h1>
+            <h1 class="animal">Gos
+        </h3>
+        <h3>Gat</h1>
+            <p>Ratolí</p>
+            <h2 class="animal">Hamster</h2>
+    </div>
+
+    <hr>
+
+    <h2>Funció 4</h2>
+    <p>A ~ B Seleccciona els elements que una vegada hi hagi un memifer, tots els insectes que el segueixin tindran el
+        text vermell</p>
+    <div id="act4">
+        <p class="insectes">Escarbat</p>
+        <p class="insectes">Formiga</p>
+        <p class="insectes">Aranya</p>
+        <p class="memifers">Tigre</p>
+        <p class="insectes">Escarbat</p>
+        <p class="insectes">Formiga</p>
+    </div>
+
+    <hr>
+
+    <h2>Funció 5</h2>
+    <p>A > B Seleccion els elements que son fills directes de A, en aquest cas dels de la clase vertebrat</p>
+    <div id="act5">
+
+        <div class="vertebrats">
+            <p>Gos</p>
+            <div class="ocells">
+                <p>Cigne</p>
+                <p>Ànec</p>
+                <p>Morell</p>
+            </div>
+            <p>Gat</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Funció 6</h2>
+    <p>:first-child Selecciona només el primer fill de l'emenet</p>
+    <div id="act6">
+        <div class="peixos">
+            <p>tauró</p>
+            <p>salmó</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Funció 7</h2>
+    <p>:last-child Selecciona només el ultim fill de l'element</p>
+    <div id="act7">
+        <div class="peixos2">
+            <p>Esturió</p>
+            <p>Balena</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Funció 8</h2>
+    <p>:first-of-type Selecciona només el primer de la clase section en aquest cas</p>
+    <div id="act8">
+        <section>
+            <p>Gos</p>
+        </section>
+        <section>
+            <p>Gat</p>
+        </section>
+        <section>
+            <p>Conill</p>
+        </section>
+    </div>
+
+</body>
+
+</html>

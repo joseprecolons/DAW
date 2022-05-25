@@ -1,0 +1,18 @@
+Llista el nom, data de naixement i edat (fes servir curdate) de totes les actrius.
+
+mysql> SELECT nom_actor Actriu,
+    -> anynaix_actor "Any Naix.",
+    -> YEAR(CURDATE()) - anynaix_actor edat
+    -> FROM ACTORS
+    -> WHERE sexe_actor = "dona";
++----------------------+-----------+------+
+| Actriu               | Any Naix. | edat |
++----------------------+-----------+------+
+| Diane Kruger         |      1976 |   44 |
+| Catherine Zeta-Jones |      1969 |   51 |
+| Jessica Alba         |      1981 |   39 |
+| Gwyneth Paltrow      |      1972 |   48 |
+| Scarlett Johansson   |      1984 |   36 |
+| Hayley Atwell        |      1982 |   38 |
++----------------------+-----------+------+
+6 rows in set (0.00 sec)

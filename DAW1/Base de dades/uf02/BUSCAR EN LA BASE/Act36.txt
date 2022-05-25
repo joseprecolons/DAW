@@ -1,0 +1,1 @@
+SELECT PELLICULES.titol_peli Peli, recaudacio_peli Recaudació FROM PELLICULES WHERE recaudacio_peli = (SELECT MIN(recaudacio_peli) FROM PELLICULES);

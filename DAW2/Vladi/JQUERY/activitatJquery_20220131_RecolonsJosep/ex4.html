@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Manipulació del DOM</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function () {
+                $("div").on({
+                    mouseenter: function () {
+                        alert ("Tens el ratolí sobre el text");
+                    },
+                    mouseleave: function () {
+                        alert ("Ja no tens el ratolí al text");
+                    },
+                    click: function () {
+                        alert ("Acabas de clicar el text");
+                    },
+                    mousedown: function () {
+                        alert ("El botó del ratolí acaba de baixar")
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            aaaaa
+        </div>
+    </body>
+</html> 

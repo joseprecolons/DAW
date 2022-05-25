@@ -1,0 +1,19 @@
+Fes un llistat on aparegui el nom del soci, el nombre de pel·lícules que ha agafat en préstec (fes servir COUNT) i l'import total (2 € per préstec).
+
+mysql> SELECT PRESTECS.id_soci "Codi soci",
+    ->        SOCIS.nom_soci Nom, 
+    ->        COUNT(PRESTECS.id_peli) * 2 "Preu"
+    -> FROM   PRESTECS
+    ->  
+    -> INNER JOIN SOCIS
+    ->    ON PRESTECS.id_soci = SOCIS.id_soci
+    ->    GROUP BY PRESTECS.id_soci;
++-----------+-----------------+------+
+| Codi soci | Nom             | Preu |
++-----------+-----------------+------+
+| 2222      | Laura Loreto    |   10 |
+| 3333      | Sandra Sampedro |    8 |
+| 4444      | Ariadna Moreno  |    6 |
+| 5555      | Laura Gil       |   10 |
++-----------+-----------------+------+
+4 rows in set (0.00 sec)

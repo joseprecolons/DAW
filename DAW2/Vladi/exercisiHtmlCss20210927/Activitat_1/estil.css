@@ -1,0 +1,53 @@
+h1 {
+    color: darkcyan;
+}
+
+h2 {
+    color: blue;
+}
+
+#colorVermell {
+    color: red;
+}
+
+#colorGroc {
+    color: rgb(216, 216, 12);
+}
+
+#colorVerd {
+    color: green;
+}
+
+#colorBlau {
+    color: blue;
+}
+
+#colorGrocFosc {
+    color: rgb(163, 163, 71);
+}
+
+#colorFucsia {
+    color: rgb(236, 32, 168);
+}
+
+#colorLilaFosc {
+    color: rgb(198, 36, 219);
+}
+
+#colorVerdSubrellat {
+    color: green;
+    text-decoration: underline green;
+}
+
+#subrellatVermell {
+    text-decoration: underline red;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+th, td {
+    padding: 5px;
+}

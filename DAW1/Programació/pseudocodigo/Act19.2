@@ -1,0 +1,73 @@
+Proceso Act192
+	Definir nomalumne Como Caracter;
+	Definir numalumnes Como Entero;
+	Definir comptadoralumne Como Entero;
+	Definir assignatures Como Entero;
+	Definir comptadorassignatures Como Entero;
+	Definir semestre Como Entero;
+	Definir comptadorsemestre Como Entero;
+	Definir parcial Como Entero;
+	Definir comptadorparcial Como Entero;
+	Definir notafinal Como Real;
+	Definir notamitjana Como Real;
+	Definir millornotamitjana Como Real;
+	Definir nomalumnemillornota Como Caracter;
+	Definir numparcials Como Entero;
+	
+	comptadoralumne <- 1;
+	numalumnes <- 2; //150
+	comptadorassignatures <- 1;
+	assignatures <- 2; //5 
+	comptadorsemestre <- 1;
+	semestre <- 2;
+	comptadorparcial <- 1;
+	numparcials <- 3;
+	millornotamitjana <- 0;
+	
+	Mientras comptadoralumne <= numalumnes Hacer
+		
+		notafinal <- 0;
+		
+		Mostrar "Escriu el teu nom";
+		Leer nomalumne;
+		
+		comptadorassignatures <- 1;
+		Mientras comptadorassignatures <= assignatures Hacer
+			
+			comptadorsemestre <- 1;
+			Mientras comptadorsemestre <= semestre Hacer
+				
+				comptadorparcial <- 1;
+				Mientras comptadorparcial <= numparcials Hacer
+					
+					Mostrar "Escriu la nota de lalumne " comptadoralumne "de lassignatura " comptadorassignatures "del semestre " comptadorsemestre "del parcial " comptadorparcial;
+					Leer parcial;
+					
+					notafinal <- notafinal + parcial;
+					
+					comptadorparcial <- comptadorparcial + 1;
+					
+				FinMientras
+				
+				comptadorsemestre <- comptadorsemestre + 1;
+				
+			FinMientras
+			
+			comptadorassignatures <- comptadorassignatures + 1;
+			
+		FinMientras
+		
+		notamitjana <- notafinal / 12;
+		
+		Si notamitjana > millornotamitjana Entonces
+			millornotamitjana <- notamitjana;
+			nomalumnemillornota <- nomalumne;
+		FinSi
+		
+		comptadoralumne <- comptadoralumne + 1;
+		
+	FinMientras
+	
+	Mostrar "Lalumne amb la millor nota mitjana es " nomalumnemillornota;
+	Mostrar "I la seva nota mitjana es " millornotamitjana;
+FinProceso

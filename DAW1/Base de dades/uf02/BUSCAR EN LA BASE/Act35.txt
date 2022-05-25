@@ -1,0 +1,8 @@
+Bon estat:
+SELECT  SOCIS.nom_soci Nom, DATEDIFF(Pres.data_retorn,Pres.data_prestec) dies, DATEDIFF(Pres.data_retorn, Pres.data_prestec) * 3 Lloguer FROM PRESTECS Pres INNER JOIN SOCIS ON Pres.id_soci = SOCIS.id_soci INNER JOIN EXEMPLARS ON  EXEMPLARS.id_peli = Pres.id_peli AND EXEMPLARS.num_exemplar = Pres.num_exemplar WHERE EXEMPLARS.estat_exemplar = "bon estat";
+
+Estat regular:
+SELECT  SOCIS.nom_soci Nom, DATEDIFF(Pres.data_retorn,Pres.data_prestec) dies, DATEDIFF(Pres.data_retorn, Pres.data_prestec) * 2.5 Lloguer FROM PRESTECS Pres INNER JOIN SOCIS ON Pres.id_soci = SOCIS.id_soci INNER JOIN EXEMPLARS ON  EXEMPLARS.id_peli = Pres.id_peli AND EXEMPLARS.num_exemplar = Pres.num_exemplar WHERE EXEMPLARS.estat_exemplar = "estat regular";
+
+Mal estat:
+SELECT  SOCIS.nom_soci Nom, DATEDIFF(Pres.data_retorn,Pres.data_prestec) dies, DATEDIFF(Pres.data_retorn, Pres.data_prestec) * 2 Lloguer FROM PRESTECS Pres INNER JOIN SOCIS ON Pres.id_soci = SOCIS.id_soci INNER JOIN EXEMPLARS ON  EXEMPLARS.id_peli = Pres.id_peli AND EXEMPLARS.num_exemplar = Pres.num_exemplar WHERE EXEMPLARS.estat_exemplar = "mal estat";

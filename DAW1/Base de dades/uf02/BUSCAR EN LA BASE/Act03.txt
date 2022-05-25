@@ -1,0 +1,14 @@
+Llista les nacionalitats dels actors (sense repetir-se --> DISTINCT).
+
+mysql> SELECT DISTINCT nacio_actor FROM ACTORS;
++-------------+
+| nacio_actor |
++-------------+
+| EUA         |
+| Alemanya    |
+| Regne Unit  |
+| Espanya     |
+| Australia   |
+| França      |
++-------------+
+6 rows in set (0.00 sec)

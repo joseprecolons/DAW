@@ -1,0 +1,25 @@
+*{
+    color: green;
+}
+.vermell{
+color: red;
+border: blue solid;
+width: 30%;
+}
+
+.subrallat{
+    text-decoration: underline;
+}
+.borde{
+    border: blue solid;
+}
+
+.pare .fill{
+    color: blue;
+    text-decoration: underline;
+    font-size: 55px;
+}
+
+.taronja{
+    color: orange;
+}

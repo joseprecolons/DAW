@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Manipulació del DOM</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#fadein").click(function() {
+                    $("#fadein").fadeIn("slow");
+                });
+
+                $("#fadeout").click(function() {
+                    $("#fadeout").fadeOut("slow");
+                });
+
+                $("#fadetoggle").click(function(){
+                    $("#fadetoggle").fadeToggle();
+                });
+
+                $("#fadeto").click(function(){
+                    $("#fadeto").fadeTo(1000, 0.4);
+                });
+
+                $("#hide").click(function(){
+                    $("#hide").hide();
+                });
+
+                $("#show").click(function(){
+                    $("#show").show();
+                });
+                
+                $("#toggle").click(function(){
+                    $("#toggle").toggle();
+                });
+
+                $("#allFunc").click(function(){
+                    $("img").fadeIn(400);
+                    $("img").fadeOut(400);
+                    $("img").fadeToggle(400);
+                    $("img").fadeTo(1000, 0.4);
+                    $("img").hide(400);
+                    $("img").show(400);
+                    $("img").toggle(400);
+
+                });
+        	});
+        </script>
+    </head>
+    <body>
+        <div>
+            <img id="fadeout" src="imgs/img1.jpg">
+            <img id="fadetoggle" src="imgs/img1.jpg">
+            <img id="fadeto" src="imgs/img1.jpg">
+            <img id="hide" src="imgs/img1.jpg">
+            <img id="toggle" src="imgs/img1.jpg">
+            <img id="allFunc" src="imgs/img1.jpg">
+        </div>
+    </body>
+</html>

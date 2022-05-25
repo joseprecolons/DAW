@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Manipulació del DOM</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function(){
+                $(".submenu").click(function(){
+                    $(this).children("ul").slideToggle();
+                    if ($(this).children(".simbol").text() == "+") {
+                        $(this).children(".simbol").text("-");
+                    } else {
+                        $(this).children(".simbol").text("+");
+                    }
+                    
+                });
+        	});
+        </script>
+        <style> 
+        /*Css només per colorets*/
+            html {
+                font-size: 20px;
+            }
+
+            li {
+                background-color: blue;
+                color: white;
+                border: 1px solid black;
+            }
+
+            ul li ul li {
+                background-color: white;
+                color: black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+          <nav class="menu">
+            <ul>
+              <li style="list-style: none;"><span class="simbol">-</span> TV</li>
+              <li style="list-style: none;" class="submenu"><span class="simbol">-</span> RADIO
+                <ul>
+                  <li style="list-style: none;">RAC 105</li>
+                  <li style="list-style: none;">ONDA 0</li>
+                  <li style="list-style: none;">M: 80</li>
+                </ul>
+              </li>
+              <li style="list-style: none;" class="submenu"><span class="simbol">-</span> SERVICES
+                <ul>
+                    <li style="list-style: none;">RAC 105</li>
+                    <li style="list-style: none;">ONDA 0</li>
+                    <li style="list-style: none;">M: 80</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </body>
+</html>

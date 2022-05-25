@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+  }
+  
+  table{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+  }
+  
+  table td{
+    width: 50px;
+    height: 50px;
+  }
+  
+  table tr:nth-child(odd) td:nth-child(even),
+  table tr:nth-child(even) td:nth-child(odd){
+    background: darkgrey;
+  }
+
+  table tr:nth-child(3) td{
+    background-image:url("imgs/peonegre.png")!important;
+
+  }
+
+  table tr:nth-child(8) td{
+    background-image:url("imgs/peoblanc.png")!important;
+
+  }
+
+  /*TORRES*/
+
+  table tr:nth-child(2) td:nth-child(2),tr:nth-child(2) td:nth-child(9) {
+    background-image:url("imgs/torrenegre.png")!important;
+  }
+
+  table tr:nth-child(9) td:nth-child(2),tr:nth-child(9) td:nth-child(9) {
+    background-image:url("imgs/torrenegre.png")!important;
+  }
+
+   /*CABALLS*/
+   table tr:nth-child(2) td:nth-child(3),tr:nth-child(2) td:nth-child(8) {
+    background-image:url("imgs/cavallnegre.png")!important;
+  }
+
+  table tr:nth-child(9) td:nth-child(3),tr:nth-child(9) td:nth-child(8) {
+    background-image:url("imgs/cavallblanc.png")!important;
+  }
+
+   /*ALFILS*/
+
+  table tr:nth-child(2) td:nth-child(4),tr:nth-child(2) td:nth-child(7) {
+    background-image:url("imgs/alfilnegre.png")!important;
+  }
+
+  table tr:nth-child(9) td:nth-child(4),tr:nth-child(9) td:nth-child(7) {
+    background-image:url("imgs/alfilblanc.png")!important;
+  }
+
+  /*REINA*/
+  table tr:nth-child(2) td:nth-child(5) {
+    background-image:url("imgs/damanegre.png")!important;
+  }
+
+  table tr:nth-child(9) td:nth-child(5) {
+    background-image:url("imgs/damablanc.png")!important;
+  }
+  /*REI*/
+
+  table tr:nth-child(2) td:nth-child(6) {
+    background-image:url("imgs/reinegre.png")!important;
+  }
+
+  table tr:nth-child(9) td:nth-child(6) {
+    background-image:url("imgs/reiblanc.png")!important;
+  }

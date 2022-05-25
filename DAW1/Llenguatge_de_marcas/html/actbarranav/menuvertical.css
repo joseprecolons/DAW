@@ -1,0 +1,42 @@
+nav {
+    background-color: rgb(231, 230, 230);
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    margin-left: -10px;
+    margin-top: -20px;
+    /* border: red solid; */
+}
+
+article {
+    margin-left: 24.8%;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+    /* border: blue solid; */
+}
+
+li {
+    text-align: left;
+    
+    /* border: green solid; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 2%;
+
+}
+
+
+li:hover a:hover{
+    color: white;
+}
+
+ul:hover li:hover{
+    background-color: rgb(4, 172, 18);
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2185B"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvTitol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#FFAB00"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <Button
+        android:id="@+id/bEntrar"
+        android:layout_width="98dp"
+        android:layout_height="79dp"
+        android:background="#AEEA00"
+        android:onClick="bEntrar"
+        android:text="Entrar"
+        android:textColor="#F60000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassw"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <EditText
+        android:id="@+id/etPassw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitol" />
+
+    <TextView
+        android:id="@+id/tvPassw"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="52dp"
+        android:text="Contraseña"
+        android:textColor="#F60000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etPassw"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCorreu" />
+
+    <TextView
+        android:id="@+id/tvCorreu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Correu"
+        android:textColor="#F60000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etEmail"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitol" />
+
+    <CheckBox
+        android:id="@+id/cbRecordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Recordar dades"
+        app:layout_constraintBottom_toTopOf="@+id/bEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassw"
+        app:layout_constraintVertical_bias="0.559"
+        tools:layout_editor_absoluteX="138dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

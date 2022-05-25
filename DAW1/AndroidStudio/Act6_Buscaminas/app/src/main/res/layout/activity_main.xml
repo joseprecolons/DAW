@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-00-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="00-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-00-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="00-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-01-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="01-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-01-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="01-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-02-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="02-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-02-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="02-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-03-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="03-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-03-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="03-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-04-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="04-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-04-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="04-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-05-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="05-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-05-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="05-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-06-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="06-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-06-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="06-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-07-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="07-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-07-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="07-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-08-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="08-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-08-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="08-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-09-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="09-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-09-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="09-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-10-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="10-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-10-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="10-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/casilla-11-00"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:shadowDy="30"
+                android:tag="11-00"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-01"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-02"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-02"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-03"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-04"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-04"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-05"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-05"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-06"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-06"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-07"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-07"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/casilla-11-08"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="17dp"
+                android:background="#9A9997"
+                android:gravity="center"
+                android:onClick="abrirCasilla"
+                android:tag="11-08"
+                android:textColor="#009688"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="367dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Logotipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buscaminas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

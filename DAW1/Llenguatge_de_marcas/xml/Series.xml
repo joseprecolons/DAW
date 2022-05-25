@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<series>
+    <serie>
+        <nom>Vikings</nom>
+        <genere>Drama històric</genere>
+        <lengua>Anglès</lengua>
+        <temporadas>6</temporadas>
+        <inici>2013</inici>
+    </serie>
+
+    <serie>
+        <nom>The 100</nom>
+        <genere>Drama</genere>
+        <lengua>Anglès</lengua>
+        <temporadas>5</temporadas>
+        <inici>2014</inici>
+    </serie>
+
+    <serie>
+        <nom>Breaking Bad</nom>
+        <genere>Thriller psicològico</genere>
+        <lengua>Anglès</lengua>
+        <temporadas>5</temporadas>
+        <inici>2008</inici>
+    </serie>
+</series>

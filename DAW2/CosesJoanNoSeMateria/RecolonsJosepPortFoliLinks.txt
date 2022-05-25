@@ -1,0 +1,5 @@
+domini: joseprecolonsportfoli.tk
+repositoris: 
+https://github.com/joseprecolons/PortFoliJosep
+https://github.com/joseprecolons/RecolonsJosep_login
+https://github.com/joseprecolons/RecolonsJosepEstrategiaAltaUsuari

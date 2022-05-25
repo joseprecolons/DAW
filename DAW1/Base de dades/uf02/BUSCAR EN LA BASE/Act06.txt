@@ -1,0 +1,30 @@
+Llista les dades dels socis i afegeix una columna amb el nombre de dies que han passat des de la data de préstec i fins a la data de devolució.
+
+mysql> SELECT SOCIS.nom_soci "Nom Soci",
+    ->        SOCIS.add_soci Adreça,
+    ->        SOCIS.tel_soci Telèfon,
+    ->        DATEDIFF(PRESTECS.data_retorn,PRESTECS.data_prestec) dies
+    -> FROM SOCIS, PRESTECS
+    -> WHERE SOCIS.id_soci = PRESTECS.id_soci;
++-----------------+-------------------+-----------+------+
+| Nom Soci        | Adreça            | Telèfon   | dies |
++-----------------+-------------------+-----------+------+
+| Laura Loreto    | Av. Catalunya, 15 | 931586945 |    1 |
+| Laura Loreto    | Av. Catalunya, 15 | 931586945 |    1 |
+| Laura Loreto    | Av. Catalunya, 15 | 931586945 |    1 |
+| Laura Loreto    | Av. Catalunya, 15 | 931586945 |    1 |
+| Laura Loreto    | Av. Catalunya, 15 | 931586945 |    2 |
+| Sandra Sampedro | Pça. Central, 25  | 93158740  |    1 |
+| Sandra Sampedro | Pça. Central, 25  | 93158740  |    1 |
+| Sandra Sampedro | Pça. Central, 25  | 93158740  |    1 |
+| Sandra Sampedro | Pça. Central, 25  | 93158740  |    1 |
+| Ariadna Moreno  | C. Rosselló, 310  | 93584785  |    1 |
+| Ariadna Moreno  | C. Rosselló, 310  | 93584785  |    1 |
+| Ariadna Moreno  | C. Rosselló, 310  | 93584785  |    1 |
+| Laura Gil       | Av. del park, 5   | 93254785  |    1 |
+| Laura Gil       | Av. del park, 5   | 93254785  |    1 |
+| Laura Gil       | Av. del park, 5   | 93254785  |    1 |
+| Laura Gil       | Av. del park, 5   | 93254785  |    1 |
+| Laura Gil       | Av. del park, 5   | 93254785  |    1 |
++-----------------+-------------------+-----------+------+
+17 rows in set (0.00 sec)

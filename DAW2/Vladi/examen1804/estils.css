@@ -1,0 +1,31 @@
+* {
+    background-color: grey;
+}
+
+article * {
+    color: green;
+}
+
+h3 + .animal {
+    color: blue;
+}
+
+.memifers ~ .insectes {
+    color: red;
+}
+
+.vertebrats > p {
+    color: yellow;
+}
+
+.peixos :first-child {
+    color: aqua;
+}
+
+.peixos2 :last-child {
+    color: aqua;
+}
+
+#act8 section:first-of-type {
+    color: blueviolet;
+}

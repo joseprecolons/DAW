@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Aquesta es la informació de l'alumne <span id="contador"></span>:</p>
+        <p> Nom de l'alumne: <span id="nomAlumne"></span></p>
+        <p> Cognom de l'alumne: <span id="cognomAlumne"></span></p>
+        <p> Email de l'alumne: <span id="emailAlumne"></span></p>
+        <p> Telefon de l'alumne: <span id="telefonAlumne"></span></p>
+        <script>
+        var contingutJSON ={
+            "alumnes":[
+                {
+                    "nom":"Josep1",
+                    "cognom":"Recolons1",
+                    "email":"joseprecolons2000@ginebro.cat1",
+                    "tlf":"654786578"
+                },
+                {
+                    "nom":"Josep2",
+                    "cognom":"Recolons2",
+                    "email":"joseprecolons2000@ginebro.cat2",
+                    "tlf":"654786576"
+                },
+                {
+                    "nom":"Josep3",
+                    "cognom":"Recolons3",
+                    "email":"joseprecolons2000@ginebro.cat3",
+                    "tlf":"654786577"
+                },
+                {
+                    "nom":"Josep4",
+                    "cognom":"Recolons4",
+                    "email":"joseprecolons2000@ginebro.cat4",
+                    "tlf":"654786571"
+                },
+                {
+                    "nom":"Josep5",
+                    "cognom":"Recolons5",
+                    "email":"joseprecolons2000@ginebro.cat5",
+                    "tlf":"654786572"
+                }
+            ]
+        };
+        
+        var x = 0;
+        var max = contingutJSON.alumnes.length - 1;
+        informacio();
+
+        function informacio() {
+            document.getElementById("contador").innerHTML = x+1;
+            document.getElementById("nomAlumne").innerHTML = contingutJSON.alumnes[x].nom;
+            document.getElementById("cognomAlumne").innerHTML = contingutJSON.alumnes[x].cognom;
+            document.getElementById("emailAlumne").innerHTML = contingutJSON.alumnes[x].email;
+            document.getElementById("telefonAlumne").innerHTML = contingutJSON.alumnes[x].tlf;
+        }
+            
+            function myFunction() {
+                if (x == max){
+                    x = 0;
+                } else {
+                    x++;
+                }
+                informacio();
+            }
+            function myFunction2() {
+                if (contador == 0){
+                    x = max;
+                } else {
+                    x--;
+                }
+                informacio();
+            }
+        </script>
+        <button onclick="myFunction()">Sumar</button>
+        <button onclick="myFunction2()">Restar</button>
+    </body>
+</html>

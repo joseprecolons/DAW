@@ -1,0 +1,13 @@
+Llista els préstecs que ha fet el soci ‘4444' en una data anterior a 23/12/2017 o posterior a 6/1/2018 (fes servir BETWEEN)
+
+mysql> SELECT id_soci, data_prestec 
+    -> FROM PRESTECS
+    -> WHERE id_soci=4444 AND data_prestec NOT BETWEEN "2017-12-23" AND "2018-1-6";
++---------+--------------+
+| id_soci | data_prestec |
++---------+--------------+
+| 4444    | 2017-11-25   |
+| 4444    | 2017-11-21   |
+| 4444    | 2017-11-10   |
++---------+--------------+
+3 rows in set (0.00 sec)

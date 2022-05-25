@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Manipulació del DOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script>
+    $(document).ready(function () {
+
+      function spawnImg(width, height) {
+        $(".img1").css("margin-top", (Math.random() * (height - 0) + 0) + "px").css("margin-left", (Math.random() * (width - 0) + 0) + "px");
+        $(".img2").css("margin-top", (Math.random() * (height - 0) + 0) + "px").css("margin-left", (Math.random() * (width - 0) + 0) + "px");
+        $(".img3").css("margin-top", (Math.random() * (height - 0) + 0) + "px").css("margin-left", (Math.random() * (width - 0) + 0) + "px");
+      }
+
+      function moveImgs(width, height) {
+        $(".img1").animate({
+          marginTop: (Math.random() * (height - 0) + 0) + "px",
+          marginLeft: (Math.random() * (width - 0) + 0) + "px"
+        });
+        $(".img2").animate({
+          marginTop: (Math.random() * (height - 0) + 0) + "px",
+          marginLeft: (Math.random() * (width - 0) + 0) + "px"
+        });
+        $(".img3").animate({
+          marginTop: (Math.random() * (height - 0) + 0) + "px",
+          marginLeft: (Math.random() * (width - 0) + 0) + "px"
+        });
+      }
+      let delay = 2000;
+      let contador = 0;
+      let temps = 60
+      $('.timeout').text(temps);
+      $(".contador").text(contador);
+
+      setTimeout(() => {
+        timer();
+      }, 1000);
+
+      function timer() {
+        setTimeout(() => {
+          timer();
+        }, 1000);
+        if (temps > 0) {
+          temps -= 1;
+        }
+        $('.timeout').text(temps)
+        if (temps == 0) {
+          $(".img1").hide();
+          $(".img2").hide();
+          $(".img3").hide();
+        }
+      }
+
+      function hideShowImg(img, delay) {
+        $(img).hide();
+        setTimeout(function () {
+          $(img).show();
+        }, 1000);
+      }
+
+      $(".img1").click(function () {
+        contador += 1;
+        $(".contador").text(contador);
+        delay *= 0.9;
+        hideShowImg(this, 1000);
+        setInterval(moveImgs, delay, width, height);
+      });
+      $(".img2").click(function () {
+        contador += 1;
+        $(".contador").text(contador);
+        delay *= 0.9;
+        hideShowImg(this, 1000);
+        setInterval(moveImgs, delay, width, height);
+
+      });
+      $(".img3").click(function () {
+        contador -= 1;
+        $(".contador").text(contador);
+        delay *= 0.9;
+        hideShowImg(this, 1000);
+        setInterval(moveImgs, delay, width, height);
+      });
+
+      let width = $(window).width() - 300;
+      let height = $(window).height() - 200;
+
+      spawnImg(width, height);
+      setInterval(moveImgs, delay, width, height);
+
+
+    });
+  </script>
+</head>
+
+<body>
+  <div class="timeout"></div>
+  <div class="contador"></div>
+  <div>
+    <img src="imgs/img1.jpg" class="img1">
+  </div>
+  <div>
+    <img src="imgs/img2.jpg" class="img2">
+  </div>
+  <div>
+    <img src="imgs/img3.jpg" class="img3">
+  </div>
+
+</body>
+
+</html>

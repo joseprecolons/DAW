@@ -1,0 +1,10 @@
+parlar
+llegir
+dibuixar
+escoltar
+caminar
+cuinar
+construir
+volar
+buscar
+tallar

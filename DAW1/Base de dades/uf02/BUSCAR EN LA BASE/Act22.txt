@@ -1,0 +1,17 @@
+Llista totes les pelis en les que ha participat l'actor "Chris Evans" juntament amb el paper que feia.
+
+mysql> SELECT nom_actor, papel, titol_peli
+    -> FROM ACTORS, ACTORS_PELLICULES, PELLICULES
+    -> WHERE ACTORS.id_actor = ACTORS_PELLICULES.id_actor AND
+    -> ACTORS.id_actor = 14 AND PELLICULES.id_peli = ACTORS_PELLICULES.id_peli;
++-------------+--------------------------------+-------------------------------------------+
+| nom_actor   | papel                          | titol_peli                                |
++-------------+--------------------------------+-------------------------------------------+
+| Chris Evans | Johny Storm                    | Los 4 fantásticos                         |
+| Chris Evans | Steve Rogers / Captain America | Los Vengadores                            |
+| Chris Evans | Steve Rogers / Captain America | Los Vengadores: La era de Ultron          |
+| Chris Evans | Steve Rogers / Captain America | Capitán América: El primer vengador       |
+| Chris Evans | Steve Rogers / Captain America | Capitán América: El Soldado de Invierno   |
+| Chris Evans | Steve Rogers / Captain America | Capitán América: Civil War                |
++-------------+--------------------------------+-------------------------------------------+
+6 rows in set (0.00 sec)

@@ -1,0 +1,40 @@
+{
+	"galaxia": {
+			"planetes": [{
+				"nom": "Mercuri",
+				"tipus": "rocos",
+				"radi": 145,
+				"massa": 214
+			},
+			{
+				"nom": "Venus",
+				"tipus": "rocos",
+				"radi": 145,
+				"massa": 214
+			},
+			{
+				"nom": "La Terra",
+				"tipus": "rocos",
+				"radi": 145,
+				"massa": 214,
+				"satelits": ["la lluna"]
+			},
+			{
+				"nom": "Mart",
+				"tipus": "rocos",
+				"radi": 145,
+				"massa": 214,
+				"satelits": ["Fobos",
+				"Deimos"]
+			},
+			{
+				"nom": "Jupiter",
+				"tipus": "gasos",
+				"radi": 145,
+				"massa": 214,
+				"satelits": ["Io",
+				"Europa",
+				"Ganimedes"]
+			}]		
+	}
+}

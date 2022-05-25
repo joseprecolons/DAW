@@ -1,0 +1,19 @@
+Llista el nom i nacionalitat de tots els directors.
+
+mysql> SELECT nom_dire, nacio_dire FROM DIRECTORS;
++--------------------------+------------+
+| nom_dire                 | nacio_dire |
++--------------------------+------------+
+| Steven Spielberg         | EUA        |
+| Amenabar                 | Espanya    |
+| Steve Buscemi            | EUA        |
+| Jon Turteltaub           | Alemanya   |
+| Michael Mann             | EUA        |
+| Jon Favreau              | EUA        |
+| Joss Whedon              | EUA        |
+| Jon Turteltaub           | EUA        |
+| Shane Black              | EUA        |
+| Joe Johnston             | Australia  |
+| Anthony Russo, Joe Russo | EUA        |
++--------------------------+------------+
+11 rows in set (0.01 sec)

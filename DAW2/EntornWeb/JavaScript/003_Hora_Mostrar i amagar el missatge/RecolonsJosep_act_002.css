@@ -1,0 +1,31 @@
+body {
+    margin-top: 3%;
+    text-align: center;
+    background-color: pink;
+}
+
+h1 {
+    font-size: 100px;
+    color: #001cbd;
+}
+
+p {
+    font-size: 50px;
+    color: chartreuse;
+}
+
+button, input {
+    margin-top: 1%;
+    border-radius: 12px;
+    color: pink;
+    background-color: blueviolet;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.5;
+    padding: 15px 32px;
+}
+
+button:hover, input:hover {
+    border: 2px solid blueviolet;
+    background-color: chartreuse;
+    color: black;
+}

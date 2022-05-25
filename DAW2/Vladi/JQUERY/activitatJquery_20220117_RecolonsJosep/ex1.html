@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Selectors CSS i jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function(){
+                $(".width").text("Width: " + $(window).width());
+                $(".height").text("Height: " + $(window).height());
+        	});
+        </script>
+    </head>
+    <body>
+        <p class="width"></p>
+        <p class="height"></p>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo1"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="Guardar y leer de un fichero"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGuardarFichero"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo1" />
+
+    <Button
+        android:id="@+id/btGuardarFichero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#2196F3"
+        android:onClick="guardarFichero"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo1" />
+
+    <EditText
+        android:id="@+id/etLeerFichero"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGuardarFichero" />
+
+    <Button
+        android:id="@+id/btLeerFichero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#2196F3"
+        android:onClick="leerFicher"
+        android:text="Leer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGuardarFichero" />
+
+    <TextView
+        android:id="@+id/tvTitulo2"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="Guardar y leer de SharedPreferences"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLeerFichero" />
+
+    <EditText
+        android:id="@+id/etGuardarPreferences"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo2" />
+
+    <Button
+        android:id="@+id/btGuardarPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#4CAF50"
+        android:onClick="guardarPreferencia"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo2" />
+
+    <EditText
+        android:id="@+id/etLeerPreferences"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGuardarPreferences" />
+
+    <Button
+        android:id="@+id/btLeerPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#4CAF50"
+        android:onClick="leerPreferencia"
+        android:text="Leer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGuardarPreferences" />
+
+    <TextView
+        android:id="@+id/tvTitulo3"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:text="Guardar y leer de base de datos SQLite"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLeerPreferences" />
+
+    <EditText
+        android:id="@+id/etGuardarBaseDatosCodigo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Código"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3"
+        android:padding="2sp" />
+
+    <EditText
+        android:id="@+id/etGuardarBaseDatosNombre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toEndOf="@+id/etGuardarBaseDatosCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3" />
+
+    <Button
+        android:id="@+id/btGuardarBaseDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FF5722"
+        android:onClick="guardarBaseDeDatos"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3" />
+
+    <EditText
+        android:id="@+id/etLeerBaseDatosNombre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:padding="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGuardarBaseDatosNombre" />
+
+    <Button
+        android:id="@+id/btLeerBaseDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FF5722"
+        android:onClick="leerBaseDeDatos"
+        android:text="Leer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGuardarBaseDatos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

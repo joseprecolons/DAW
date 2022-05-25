@@ -1,0 +1,17 @@
+import java.util.*;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num, comptador;
+		
+		Scanner teclatnum = new Scanner(System.in);
+		
+		System.out.println("Introdueix un número");
+		
+		num = teclatnum.nextInt();
+
+	}
+
+}

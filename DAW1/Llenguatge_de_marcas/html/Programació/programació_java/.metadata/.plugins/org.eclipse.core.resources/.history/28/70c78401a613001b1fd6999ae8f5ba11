@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		float num1, num2, num3, num4, num5;
+		float numgran, numpetit;
+		float suma, mitjana;
+		
+		Scanner teclatnum = new Scanner (System.in);
+		
+		teclatnum.close();
+	}
+
+}

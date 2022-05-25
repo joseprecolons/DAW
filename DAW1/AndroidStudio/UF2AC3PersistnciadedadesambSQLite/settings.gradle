@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "UF2-AC3 Persistència de dades amb SQLite"

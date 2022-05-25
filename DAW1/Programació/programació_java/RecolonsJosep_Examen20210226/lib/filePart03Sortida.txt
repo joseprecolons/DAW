@@ -1,0 +1,4 @@
+Fila 1 té 4 a's, 3 e's, 2 i's, 2 o's, 1 u's i 4 paraules.
+Fila 2 té 4 a's, 3 e's, 1 i's, 1 o's, 3 u's i 6 paraules.
+Fila 3 té 2 a's, 6 e's, 3 i's, 1 o's, 0 u's i 6 paraules.
+Fila 4 té 1 a's, 5 e's, 2 i's, 2 o's, 0 u's i 8 paraules.

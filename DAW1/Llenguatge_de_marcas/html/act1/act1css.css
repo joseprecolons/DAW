@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+
+.text1{
+    color: green;
+}
+
+.vermell{
+    background-color: red;
+}
+
+img{
+    border: green solid;
+    margin-left: 30px;
+    padding: 5px;
+}

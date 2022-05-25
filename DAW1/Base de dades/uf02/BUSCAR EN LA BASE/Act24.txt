@@ -1,0 +1,23 @@
+Emprant l'activitat 23, llista només la més jove.
+
+mysql> SELECT MAX(anynaix_actor)
+    -> FROM ACTORS;
++--------------------+
+| MAX(anynaix_actor) |
++--------------------+
+|               1984 |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT nom_actor Actriu,
+    -> anynaix_actor "Any Naix.",
+    -> YEAR(CURDATE()) - anynaix_actor edat
+    -> FROM ACTORS
+    -> WHERE sexe_actor = "dona" AND 
+    -> anynaix_actor = (SELECT MAX(anynaix_actor) FROM ACTORS);
++--------------------+-----------+------+
+| Actriu             | Any Naix. | edat |
++--------------------+-----------+------+
+| Scarlett Johansson |      1984 |   36 |
++--------------------+-----------+------+
+1 row in set (0.00 sec)

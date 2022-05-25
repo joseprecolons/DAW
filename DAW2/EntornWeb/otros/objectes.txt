@@ -1,0 +1,10 @@
+roba
+- talla
+- color
+- marca
+
+samarreta
+- tirants
+
+pantalons
+- cinturó

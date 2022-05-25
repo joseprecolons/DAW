@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2185B"
+    tools:context=".TareaActivity">
+
+    <EditText
+        android:id="@+id/etNombreTarea"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#FF80AB"
+        android:ems="10"
+        android:hint="nombre de la tarea"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#1976D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDetalleTarea"
+        android:layout_width="378dp"
+        android:layout_height="422dp"
+        android:layout_marginTop="40dp"
+        android:background="#FF80AB"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#1976D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreTarea" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:background="#1976D2"
+        android:onClick="guardarTarea"
+        android:text="Guardar tarea"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDetalleTarea" />
+
+    <Switch
+        android:id="@+id/swPrioritat"
+        android:layout_width="179dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="24dp"
+        android:background="#0091EA"
+        android:text="PRIORITARIA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDetalleTarea" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

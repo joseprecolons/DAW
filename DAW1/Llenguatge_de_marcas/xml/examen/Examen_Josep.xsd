@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="activitats">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="activitat" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="nomact" type="xs:string"/>
+                    <xs:element name="codi" type="xs:integer"/>
+                    <xs:element name="data" type="xs:date"/>
+                    <xs:element name="nomu" type="xs:string"/>
+                    <xs:element name="modalitat">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="bicicleta|atletisme|natacio"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="durada" type="xs:integer"/>
+                    <xs:element name="pulsacionsm">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:pattern value="[0-9][0-9][0-9]"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="calories" type="xs:integer"/>
+                    <xs:element name="punts" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="poble" type="xs:string"/>
+                                <xs:element name="altitud" type="xs:integer"/>
+                                <xs:element name="horapas" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+.text1 {
+    margin-top: 5%;
+    border: red solid;
+}
+
+.text2 {
+    margin-left: 5%;
+    border: red solid;
+}
+
+.text3 {
+    padding-left: 5%;
+    border: red solid;
+}
+
+.text4 {
+    border: blue solid;
+    text-align: justify;
+    color: yellow;
+    background-color: black;
+    padding: 5%;
+    margin: 4%;
+}
+
+article {
+    border: orange solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1%;
+}
+
+article > article {
+    border: green solid;
+    margin: 2%;
+}

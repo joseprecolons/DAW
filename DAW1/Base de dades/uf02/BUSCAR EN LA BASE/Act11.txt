@@ -1,0 +1,14 @@
+Llista els actors (solament homes) que han nascut durant la dècada dels 80.
+
+mysql> SELECT nom_actor "Nom", anynaix_actor "Any de neixement", sexe_actor "Sexe" 
+    -> FROM ACTORS
+    -> WHERE anynaix_actor BETWEEN 1980 AND 1989 AND sexe_actor = "home";
++-----------------+------------------+------+
+| Nom             | Any de neixement | Sexe |
++-----------------+------------------+------+
+| Chris Hemsworth |             1983 | home |
+| Chris Evans     |             1981 | home |
+| Jeremy Renner   |             1981 | home |
+| Sebastian Stan  |             1982 | home |
++-----------------+------------------+------+
+4 rows in set (0.00 sec)

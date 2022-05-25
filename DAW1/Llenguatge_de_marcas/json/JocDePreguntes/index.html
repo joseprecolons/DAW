@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <div class="bts">
+    <input class="btAnterior" type="button" value="Anterior" onclick="doAnterior();" />
+    <button class="btResposta" onclick="resultat()">Resultat</button>
+    <input class="btSeguent" type="button" value="Següent" onclick="doSeguent();" />
+  </div>
+  <div class="titol">
+    <h1>QUESTION <span id="contador"></span>:</h1>
+  </div>
+
+  <div>
+    <h2 id="pregunta" class="pregunta"></h2>
+  </div>
+
+  <table>
+    <tr>
+      <th class="fila1">
+        <span class="espacios">..</span>
+        <input type="radio"  id="r1" name="resposta"> <span class="espacios">-</span>
+        <label id="en1"></label>
+      </th>
+
+      <th class="fila1">
+        <span class="espacios">.-</span>
+        <input type="radio"  id="r2" name="resposta">  <span class="espacios">-</span>
+        <label id="en2"></label>
+      </th>
+    </tr>
+
+    <tr>
+      <th class="fila2">
+        <span class="espacios">..</span>
+        <input type="radio" id="r3" name="resposta">  <span class="espacios">-</span>
+        <label id="en3"></label>
+      </th>
+
+      <th class="fila2">
+        <span class="espacios">.-</span>
+        <input type="radio"  id="r4" name="resposta">  <span class="espacios">-</span>
+        <label id="en4"></label>
+      </th>
+    </tr>
+  </table>
+  <script src="funcions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    /* border: red solid; */
+    width: fit-content;
+    display: flex;
+    margin-left: 30%;
+}
+
+li {
+    /* border: blue solid; */
+    margin-right: 5px;
+    background-color: aqua;
+    text-align: center;
+    width: 150px;
+    box-shadow: 3px 5px 5px red;
+    border-left: 10px green solid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+li:hover{
+    background-color: blue;
+    box-shadow: 3px 5px 5px greenyellow;
+}

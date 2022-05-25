@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<activitats>
+    <activitat>
+        <nomact>activitat1</nomact>
+        <codi>001</codi>
+        <data>2020-07-21</data>
+        <nomu>josep</nomu>
+        <modalitat>bicicleta</modalitat>
+        <durada>30</durada>
+        <pulsacionsm>120</pulsacionsm>
+        <calories>500</calories>
+        <punts>
+            <poble>llinars</poble>
+            <altitud>300</altitud>
+            <horapas>18</horapas>
+        </punts>
+    </activitat>
+    <activitat>
+        <nomact>activitat2</nomact>
+        <codi>002</codi>
+        <data>2020-07-25</data>
+        <nomu>josep</nomu>
+        <modalitat>natacio</modalitat>
+        <durada>60</durada>
+        <pulsacionsm>125</pulsacionsm>
+        <calories>300</calories>
+        <punts>
+            <poble>mataro</poble>
+            <altitud>10</altitud>
+            <horapas>20</horapas>
+        </punts>
+    </activitat>
+    <activitat>
+        <nomact>activitat3</nomact>
+        <codi>003</codi>
+        <data>2020-07-30</data>
+        <nomu>josep</nomu>
+        <modalitat>atletisme</modalitat>
+        <durada>120</durada>
+        <pulsacionsm>140</pulsacionsm>
+        <calories>1000</calories>
+        <punts>
+            <poble>argentona</poble>
+            <altitud>200</altitud>
+            <horapas>22</horapas>
+        </punts>
+    </activitat>
+</activitats>

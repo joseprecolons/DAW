@@ -1,0 +1,7 @@
+Básicament, crear un array on guardaràs el primer valor (es guardarà en el moment que cliquis 
+un símbol de operació), després, detectar el símbol que s'ha clicat i guardar-lo a una variable, 
+i el mateix, guardar el següent número, fins que cliqui el igual.
+Un cop clicat el igual, segons la operació que vulgui, cridar la funció que pertoqui, 
+i fer l'operació.
+
+El tema de canviar entre bàsica i cientifica, simplement al clicar fer-li un display none, o no.

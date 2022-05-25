@@ -1,0 +1,145 @@
+html {
+    background: url(imgs/wwtbm.png) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    color: white;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.bts {
+    margin-top: 15%;
+}
+
+
+.btAnterior {
+    position: relative;
+    font-size: 50px;
+    margin-right: 20%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ce2f14;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btAnterior:hover {background-color: #ce2f14}
+  
+.btAnterior:active {
+  background-color: #ce2f14;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btResposta {
+    font-size: 50px;
+    margin-right: 20%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #156ada;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btResposta:hover {background-color: #156ada}
+  
+.btResposta:active {
+  background-color: #156ada;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btSeguent {
+    font-size: 50px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #26a80b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btSeguent:hover {background-color: #26a80b}
+  
+.btSeguent:active {
+  background-color: #26a80b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.titol {
+    margin-top: 3%;
+    width: fit-content;
+}
+
+.pregunta {
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: -0.2%;
+    font-size: 50px;
+    height: 130px;
+}
+table {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2%;
+}
+th {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 4%;
+    width: 20%;
+}
+
+.fila1 {
+    padding-top: 2.9%;
+    padding-bottom: 3%;
+}
+
+.fila2 {
+    padding-top: 2.1%;
+    padding-bottom: 3%;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    transform: scale(4);
+}
+
+body > table > tbody > tr:nth-child(1) > th:nth-child(2) {
+    padding-left: 6%;
+}
+
+body > table > tbody > tr:nth-child(2) > th:nth-child(2) {
+    padding-left: 6%;
+}
+
+.espacios {
+    color: black;
+}

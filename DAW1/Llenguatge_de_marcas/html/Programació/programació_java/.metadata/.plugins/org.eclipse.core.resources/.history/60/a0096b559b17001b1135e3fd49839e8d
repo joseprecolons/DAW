@@ -1,0 +1,31 @@
+import java.util.*;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num;
+		int comptador = 1;
+		float resultatdiv = 0;
+		int comptadordivs = 0;
+		
+		Scanner teclatnum = new Scanner(System.in);
+		
+		System.out.println("Introdueix un número");
+		num = teclatnum.nextInt();
+		
+		while (comptador >= num) {
+			resultatdiv = (comptador/num);
+			if (resultatdiv == 1 || 0) {
+				comptadordivs++;
+			}
+			comptador++;
+		}
+		if (comptadordivs > 2) {
+			System.out.println(num + " no és un número primer");
+		} else {
+			System.out.println(num + " és un número primer");
+		}
+	}
+
+}

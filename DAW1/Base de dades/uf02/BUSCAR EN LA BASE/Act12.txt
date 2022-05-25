@@ -1,0 +1,18 @@
+Llista les pelis de "Marvel Enterprises".
+
+mysql> SELECT titol_peli "Titol", produ_peli "Productora" 
+    -> FROM PELLICULES
+    -> WHERE produ_peli = "Marvel Enterprises";
++-------------------------------------------+--------------------+
+| Titol                                     | Productora         |
++-------------------------------------------+--------------------+
+| Iron Man                                  | Marvel Enterprises |
+| Los Vengadores                            | Marvel Enterprises |
+| Los Vengadores: La era de Ultron          | Marvel Enterprises |
+| Iron Man 2                                | Marvel Enterprises |
+| Iron Man 3                                | Marvel Enterprises |
+| Capitán América: El primer vengador       | Marvel Enterprises |
+| Capitán América: El Soldado de Invierno   | Marvel Enterprises |
+| Capitán América: Civil War                | Marvel Enterprises |
++-------------------------------------------+--------------------+
+8 rows in set (0.00 sec)

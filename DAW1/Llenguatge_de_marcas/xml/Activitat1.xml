@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cadastre>
+<habitatge>
+    <carrer>Lope Mateo</carrer>
+    <numero>18</numero>
+    <plantaporta>11</plantaporta>
+    <persona>
+        <nif>73829405H</nif>
+        <nom>Pedro</nom>
+        <cognoms>Garcia González</cognoms>
+        <neixement>4/8/1970</neixement>
+        <sexe>Home</sexe>
+    </persona>
+    <persona>
+        <nif>738254355H</nif>
+        <nom>Pedro2</nom>
+        <cognoms>Garcia González</cognoms>
+        <neixement>4/8/1950</neixement>
+        <sexe>Dona</sexe>
+    </persona>
+</habitatge>
+<habitatge>
+    <carrer>Victor Català</carrer>
+    <numero>16</numero>
+    <plantaporta>45</plantaporta>
+    <persona>
+        <nif>34287456K</nif>
+        <nom>Marc</nom>
+        <cognoms>Martínez Diaz</cognoms>
+        <neixement>7/1/1984</neixement>
+        <sexe>Home</sexe>
+    </persona>
+    <persona>
+        <nif>84365298S</nif>
+        <nom>Marta</nom>
+        <cognoms>Muñoz López</cognoms>
+        <neixement>23/4/1980</neixement>
+        <sexe>Dona</sexe>
+    </persona>
+</habitatge>
+<habitatge>
+    <carrer>Victor Català</carrer>
+    <numero>34</numero>
+    <plantaporta>65</plantaporta>
+    <persona>
+        <nif>83234534S</nif>
+        <nom>Sole</nom>
+        <cognoms>Garcia López</cognoms>
+        <neixement>23/4/1990</neixement>
+        <sexe>Dona</sexe>
+    </persona>
+</habitatge>
+</cadastre>

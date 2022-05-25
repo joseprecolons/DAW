@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="alumnes">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="alumne">
+                <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="codi" type="xs:integer"/>
+                        <xs:element name="dni">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z]"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="nom" type="xs:string"/>
+                        <xs:element name="cognoms" type="xs:string"/>
+                        <xs:element name="data" type="xs:string"/>
+                        <xs:element name="germans" type="xs:integer"/>
+                        <xs:element name="sexe" type="xs:string"/>
+                        <xs:element name="curs" type="xs:string"/>
+                        <xs:element name="tutor" type="xs:string" default="Joan"/>
+                        <xs:element name="materia" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nommateria" type="xs:string"/>
+                                    <xs:element name="notaparcial" type="xs:decimal" maxOccurs="unbounded"/>
+                                    <xs:element name="notafinal" type="xs:decimal"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

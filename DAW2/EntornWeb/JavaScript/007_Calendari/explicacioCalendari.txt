@@ -1,0 +1,6 @@
+Sabent el dia en el que estas, agafas el més amb la funció corresponent, i amb això pots saber
+el dia exacte en que cau el dia 1.
+A partir del día 1 i sabent quin número és de la setmana, creas una matriu, en que cada día de la
+setmana, serà un array, en cas de que el dia 1, no sigui dilluns, les posicions fins a aquest dia
+1, seran null. Un cop, la matriu estigui plena, es simplemente crear cada columna en referencia a
+cada array, i cada día serà 1 posició, de l'array.

@@ -1,0 +1,18 @@
+Llista el títol de les pel·lícules que tenen més de 10 anys d'antiguitat (respecte a la seva data d'estrena).
+
+mysql> SELECT titol_peli, any_peli
+    -> FROM PELLICULES
+    -> WHERE YEAR(CURRENT_DATE()) - any_peli > 10;
++----------------------------------+----------+
+| titol_peli                       | any_peli |
++----------------------------------+----------+
+| La busqueda                      |     2004 |
+| La terminal                      |     2004 |
+| Mar adentro                      |     2004 |
+| Colateral                        |     2004 |
+| Los 4 fantásticos                |     2005 |
+| Sin City                         |     2005 |
+| Iron Man                         |     2008 |
+| La busqueda 2: El diario secreto |     2008 |
++----------------------------------+----------+
+8 rows in set (0.00 sec)

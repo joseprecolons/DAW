@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double num1;
+		double num2;
+		double suma;
+		double resta;
+		double prod;
+		double divi;
+		
+		Scanner teclatnum = new Scanner (System.in);
+		
+		System.out.println("Introdueix el primer numero");
+		num1 = teclatnum.nextInt();
+		System.out.println("Introdueix el segon numero");
+		num2 = teclatnum.nextInt();
+		
+		suma = (num1 + num2);
+		
+		if (suma > 0) {
+			
+			System.out.println("El resultat de la suma és positiu");
+			
+		} else if (suma < 0) {
+			
+			System.out.println("El resultat de la suma és negatiu");
+			
+		} else {
+			
+			System.out.println("El resultat de la suma és zero");
+		}
+		
+		resta = (num1 + num2);
+		
+		if (resta > 0) {
+			
+			System.out.println("El resultat de la resta és positiu");
+			
+		} else if (resta < 0) {
+			
+			System.out.println("El resultat de la resta és negatiu");
+			
+		} else {
+			
+			System.out.println("El resultat de la resta és zero");
+		}
+		
+		teclatnum.close();
+	}
+}

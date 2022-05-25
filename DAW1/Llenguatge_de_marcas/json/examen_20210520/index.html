@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="estils.css">
+    </head>
+    <body>
+
+        <h1 class="titulos"> ALUMNES </h1>
+        <div class="textq">
+            <p class="texto"><span id="nom"></span> <span id="c1"></span> <span id="c2"></span></p>
+            <p class="texto"><span id="escape"></span></p>
+            <p class="texto"><span id="preu"></span> €</p>
+        </div>
+        <div class="button">
+            <button onclick="doSeguent()">SegüentAlumne</button>
+            <button onclick="doAnterior()">AnteriorAlumne</button>
+            <br>
+            <br>
+            <input type="radio"  id="r1" name="canviarPreu">
+            <label>Misteri (20€) </label>
+            <input type="radio"  id="r2" name="canviarPreu">
+            <label>Intriga (25€) </label>
+            <input type="radio"  id="r3" name="canviarPreu">
+            <label>Terror (30€) </label>
+        </div>
+
+        <div>
+            <p class="texto"> Suma total de tots els alumnes: <span id="preuTotal"></span> €</p>
+        </div>
+        <script src="funcions.js"></script>
+    </body>
+</html>

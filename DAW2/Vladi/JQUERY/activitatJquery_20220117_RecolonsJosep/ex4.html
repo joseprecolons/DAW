@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#bDuplicar").click(function () {
+                $("#img1").width($("#img1").width() * 2);
+                $("#img2").width($("#img2").width() * 2);
+            });
+
+            $("#bDividir").click(function () {
+                $("#img1").width($("#img1").width() / 2);
+                $("#img2").width($("#img2").width() / 2);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <button id="bDuplicar">Duplicar dimensions</button>
+    <button id="bDividir">Dividir dimensions</button>
+
+
+    <div>
+        <img src="imgs/negritos.jpg" id="img1">
+        <br>
+        <img src="imgs/birdtiger.jpg" id="img2">
+    </div>
+</body>
+
+</html>

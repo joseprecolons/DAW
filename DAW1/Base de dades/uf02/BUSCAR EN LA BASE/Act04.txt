@@ -1,0 +1,29 @@
+Llista les dades dels actors, fes que els noms de les columnes siguin en català.
+
+mysql> SELECT id_actor Codi, nom_actor Nom, nacio_actor Nacionalitat, anynaix_actor "Any de neixement",
+sexe_actor Sexe FROM ACTORS;
++------+----------------------+--------------+------------------+------+
+| Codi | Nom                  | Nacionalitat | Any de neixement | Sexe |
++------+----------------------+--------------+------------------+------+
+|    1 | Nicolas Cage         | EUA          |             1964 | home |
+|    2 | Diane Kruger         | Alemanya     |             1976 | dona |
+|    3 | Tom Hanks            | EUA          |             1956 | home |
+|    4 | Catherine Zeta-Jones | Regne Unit   |             1969 | dona |
+|    5 | Javier Bardem        | Espanya      |             1969 | home |
+|    6 | Tom Cruise           | EUA          |             1962 | home |
+|    7 | Jamie Foxx           | EUA          |             1967 | home |
+|    8 | Jessica Alba         | EUA          |             1981 | dona |
+|    9 | Ioan Gruffudd        | Regne Unit   |             1973 | home |
+|   10 | Robert Downey Jr.    | EUA          |             1965 | home |
+|   11 | Gwyneth Paltrow      | Regne Unit   |             1972 | dona |
+|   12 | Chris Hemsworth      | Australia    |             1983 | home |
+|   13 | Mark Ruffalo         | EUA          |             1967 | home |
+|   14 | Chris Evans          | EUA          |             1981 | home |
+|   15 | Scarlett Johansson   | EUA          |             1984 | dona |
+|   16 | Jeremy Renner        | França       |             1981 | home |
+|   17 | James Spader         | Regne Unit   |             1960 | home |
+|   18 | Michael Chiklis      | EUA          |             1969 | home |
+|   19 | Hayley Atwell        | Regne Unit   |             1982 | dona |
+|   20 | Sebastian Stan       | EUA          |             1982 | home |
++------+----------------------+--------------+------------------+------+
+20 rows in set (0.00 sec)

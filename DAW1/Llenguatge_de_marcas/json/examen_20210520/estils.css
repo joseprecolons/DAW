@@ -1,0 +1,22 @@
+html {
+    background: url(imgs/imgFondo.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    text-align: center;
+    color: rgb(223, 10, 10);
+}
+
+.titulos {
+    font-size: 100px;
+}
+
+.texto {
+    flex-wrap: wrap;
+    color: black;
+    font-size: 30px;
+}

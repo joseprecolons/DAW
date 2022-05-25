@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Manipulació del DOM</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#fadein").click(function() {
+                    $("img").fadeIn("slow");
+                });
+
+                $("#fadeout").click(function() {
+                    $("img").fadeOut("slow");
+                });
+
+                $("#fadetoggle").click(function(){
+                    $("img").fadeToggle();
+                });
+
+                $("#fadeto").click(function(){
+                    $("img").fadeTo(1000, 0.4);
+                });
+
+                $("#hide").click(function(){
+                    $("img").hide();
+                });
+
+                $("#show").click(function(){
+                    $("img").show();
+                });
+                
+                $("#toggle").click(function(){
+                    $("img").toggle();
+                });
+
+                $("#allFunc").click(function(){
+                    $("img").fadeIn(400);
+                    $("img").fadeOut(400);
+                    $("img").fadeToggle(400);
+                    $("img").fadeTo(1000, 0.4);
+                    $("img").hide(400);
+                    $("img").show(400);
+                    $("img").toggle(400);
+
+                });
+        	});
+        </script>
+    </head>
+    <body>
+        <div>
+            <img src="imgs/img1.jpg">
+            <br>
+            <button id="fadein">FadeIn</button>
+            <button id="fadeout">FadeOut</button>
+            <button id="fadetoggle">FadeToggle</button>
+            <button id="fadeto">FadeTo</button>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            <button id="toggle">Toggle</button>
+            <button id="allFunc">AllFunctions</button>
+        </div>
+    </body>
+</html>

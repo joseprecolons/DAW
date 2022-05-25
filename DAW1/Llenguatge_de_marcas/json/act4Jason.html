@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Aquesta es la informació de l'habitatge <span id="contador"></span>:</p>
+        <p> Nom del carrer: <span id="carrerP"></span></p> 
+        <p> Numero del pis: <span id="numeroP"></span></p>
+        <p> Porta del pis: <span id="portaP"></span></p>
+        <p>Aquesta es la informació de l'habitant <span id="contador2"></span>:</p>
+        <p> Nif: <span id="nifHabitant"></span></p>
+        <p> Nom: <span id="nomHabitant"></span></p>
+        <p> Cognom: <span id="cognomHabitant"></span></p>
+        <p> Data naixement: <span id="dataNaixHabitant"></span></p>
+        <p> Sexe: <span id="sexeHabitant"></span></p>
+        <script>
+        var contingutJSON ={
+            "habitatge":[
+                {
+                    "carrer":"carrer1",
+                    "numero":"numero1",
+                    "porta":"porta1",
+                    "habitants":[{"NIF":"4343242J", "nom":"josep1", "cognom":"recolons1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                    {"NIF":"4343242K", "nom":"josep2", "cognom":"recolons2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                    {"NIF":"4343242H", "nom":"josep3", "cognom":"recolons3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                },
+                {
+                    "carrer":"carrer2",
+                    "numero":"numero2",
+                    "porta":"porta2",
+                    "habitants":[{"NIF":"4343242J", "nom":"pol1", "cognom":"pavon1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                    {"NIF":"4343242K", "nom":"pol2", "cognom":"pavon2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                    {"NIF":"4343242H", "nom":"pol3", "cognom":"pavon3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                },
+                {
+                    "carrer":"carrer3",
+                    "numero":"numero3",
+                    "porta":"porta3",
+                    "habitants":[{"NIF":"4343242J", "nom":"marc1", "cognom":"garcia1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                    {"NIF":"4343242K", "nom":"marc2", "cognom":"garcia2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                    {"NIF":"4343242H", "nom":"marc3", "cognom":"garcia3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                },
+                {
+                    "carrer":"carrer4",
+                    "numero":"numero4",
+                    "porta":"porta4",
+                    "habitants":[{"NIF":"4343242J", "nom":"vladi1", "cognom":"bellavista1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                    {"NIF":"4343242K", "nom":"vladi2", "cognom":"bellavista2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                    {"NIF":"4343242H", "nom":"vladi3", "cognom":"bellavista3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                },
+                {
+                    "carrer":"carrer5",
+                    "numero":"numero5",
+                    "porta":"porta5",
+                    "habitants":[{"NIF":"4343242J", "nom":"joan1", "cognom":"pardo1", "dataNaix":"18/04/2000", "sexe":"home"}, 
+                    {"NIF":"4343242K", "nom":"joan2", "cognom":"pardo2", "dataNaix":"18/04/2545", "sexe":"dona"}, 
+                    {"NIF":"4343242H", "nom":"joan3", "cognom":"pardo3", "dataNaix":"18/04/4342", "sexe":"home"}]
+                }
+            ]
+        };
+        
+        var x = 0;
+        var y = 0;
+        var nom = "";
+        var max = contingutJSON.habitatge.length - 1;
+        var maxY = contingutJSON.habitatge[0].habitants.length - 1;
+        informacio();
+
+        function informacio() {
+            document.getElementById("contador").innerHTML = x + 1;
+            document.getElementById("contador2").innerHTML = y + 1;
+            document.getElementById("carrerP").innerHTML = contingutJSON.habitatge[x].carrer;
+            document.getElementById("numeroP").innerHTML = contingutJSON.habitatge[x].numero;
+            document.getElementById("portaP").innerHTML = contingutJSON.habitatge[x].porta;
+            document.getElementById("nifHabitant").innerHTML = contingutJSON.habitatge[x].habitants[y].NIF;
+            document.getElementById("nomHabitant").innerHTML = contingutJSON.habitatge[x].habitants[y].nom;
+            document.getElementById("cognomHabitant").innerHTML = contingutJSON.habitatge[x].habitants[y].cognom;
+            document.getElementById("dataNaixHabitant").innerHTML = contingutJSON.habitatge[x].habitants[y].dataNaix;
+            document.getElementById("sexeHabitant").innerHTML = contingutJSON.habitatge[x].habitants[y].sexe;
+        }
+            
+            function myFunction() {
+                if (x == max){
+                    x = 0;
+                } else {
+                    x++;
+                }
+                informacio();
+            }
+            function myFunction2() {
+                if (contador == 0){
+                    x = max;
+                } else {
+                    x--;
+                }
+                informacio();
+            }
+
+            function myFunction3() {
+                if (y == maxY){
+                    y = 0;
+                } else {
+                    y++;
+                }
+                informacio();
+            }
+
+            function myFunction4() {
+                if (contador == 0){
+                    y = maxY;
+                } else {
+                    y--;
+                }
+                informacio();
+            }
+
+            function afegir(){
+                contingutJSON.habitatge.push({"carrer":document.getElementById("nomCarrer").value, "numero":document.getElementById("numPis").value, 
+                "porta":document.getElementById("numPorta").value});
+                max = contingutJSON.habitatge.length - 1;
+                informacio();
+            }
+
+            function mostrar(){
+                nom = document.getElementById("nomCarrer").value;
+
+                for (i = 0, j = 0; i < contingutJSON.habitatge.length; i++) {
+                    if (nom == contingutJSON.habitatge[i].carrer) {
+                        x = i;
+                        informacio();
+                    } else {
+                        j++;
+                    }
+
+                    if (j == contingutJSON.habitatge.length) {
+                        alert("error, no existeix aquest habitatge");
+                    }
+                }
+            }
+
+            function modificar(){
+                contingutJSON.habitatge[x].carrer = document.getElementById("nomCarrer").value;
+                contingutJSON.habitatge[x].numero = document.getElementById("numPis").value;
+                contingutJSON.habitatge[x].porta = document.getElementById("numPorta").value;
+                informacio();
+            }
+
+            function borrar(){
+                contingutJSON.habitatge.splice(x,1);
+                max = contingutJSON.habitatge.length - 1;
+                informacio();
+            }
+
+        </script>
+        <button onclick="myFunction()">SumarHabitatge</button>
+        <button onclick="myFunction2()">RestarHabitatge</button>
+        <button onclick="myFunction3()">SumarHabitant</button>
+        <button onclick="myFunction4()">RestarHabitant</button>
+        <br><br>
+
+        <form>
+            <label>Nom carrer: </label>
+            <input type="text" id="nomCarrer">
+        </form>
+        <br>
+        <form>
+            <label>Numero pis: </label>
+            <input type="text" id="numPis">
+        </form>
+        <br>
+        <form>
+            <label>Porta pis: </label>
+            <input type="text" id="numPorta">
+        </form>
+
+        <br><br>
+
+        <button onclick="afegir()">Afegir</button>
+        <button onclick="mostrar()">Mostrar</button>
+        <button onclick="modificar()">Modificar</button>
+        <button onclick="borrar()">Borrar</button>
+        <!--<form>
+            <label>Habitatge: </label>
+            <input type="text" id="numHabitatge">
+            <label>Habitant: </label>
+            <input type="text" id="numHabitant">
+        </form>
+    </body>
+</html>

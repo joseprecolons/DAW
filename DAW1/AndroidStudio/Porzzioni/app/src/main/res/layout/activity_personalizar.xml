@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D9DA"
+    tools:context=".PersonalizarActivity">
+
+    <TextView
+        android:id="@+id/tvPTP"
+        android:layout_width="203dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="72dp"
+        android:text="Personalitza tu pizza"
+        android:textAlignment="center"
+        android:textColor="#FFAB00"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumIngredients"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPTP" />
+
+    <TextView
+        android:id="@+id/tvnumingredients"
+        android:layout_width="242dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:text="Número d'ingradients"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/etNumIngredients"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPTP" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumIngredients">
+
+        <RadioButton
+            android:id="@+id/rbPetit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbMitja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px" />
+
+        <RadioButton
+            android:id="@+id/rbGran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvGran"
+        android:layout_width="242dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="44dp"
+        android:text="Gran"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnumingredients" />
+
+    <TextView
+        android:id="@+id/tvMitja"
+        android:layout_width="242dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:text="Mitjana"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGran" />
+
+    <TextView
+        android:id="@+id/tvPetit"
+        android:layout_width="242dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:text="Petita"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMitja" />
+
+    <Switch
+        android:id="@+id/swBorde"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvBorde"
+        android:layout_width="242dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="44dp"
+        android:text="Borde amb formatge"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        app:layout_constraintEnd_toStartOf="@+id/swBorde"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPetit" />
+
+    <ImageButton
+        android:id="@+id/bCalcular"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="112dp"
+        android:onClick="bCalcular"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swBorde"
+        app:srcCompat="@drawable/reloadimg" />
+
+    <Button
+        android:id="@+id/bEnviar"
+        android:layout_width="102dp"
+        android:layout_height="64dp"
+        android:background="#AEEA00"
+        android:onClick="bEnviar"
+        android:text="ENVIAR"
+        android:textColor="#F60000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreu" />
+
+    <TextView
+        android:id="@+id/tvPreu"
+        android:layout_width="96dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="bCalcular"
+        android:textAlignment="center"
+        android:textColor="#F60000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/bCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/tvBorde" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

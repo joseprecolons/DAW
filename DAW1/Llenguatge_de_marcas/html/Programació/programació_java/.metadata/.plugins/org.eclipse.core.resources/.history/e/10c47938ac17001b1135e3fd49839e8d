@@ -1,0 +1,15 @@
+import java.util.*;
+public class ClassePrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclatnum = new Scanner(System.in);
+		
+		System.out.println("Introdueix un número");
+		N = teclatnum.nextInt();
+		
+		
+	}
+
+}

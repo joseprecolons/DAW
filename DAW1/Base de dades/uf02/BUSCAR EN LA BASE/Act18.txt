@@ -1,0 +1,34 @@
+Llista el títol i número d'exemplar d'aquelles pelis que s'han prestat en dimecres (fes servir dayofweek).
+
+mysql> SELECT   PELLICULES.titol_peli titol,
+    ->            EXEMPLARS.num_exemplar "núm. exempl.",
+    ->          PRESTECS.data_prestec "data prest.",
+    ->                dayofweek(PRESTECS.data_prestec) "dia semana"
+    ->          
+    -> FROM     PELLICULES, EXEMPLARS
+    -> INNER JOIN PRESTECS 
+    ->  ON      PRESTECS.id_peli=EXEMPLARS.id_peli
+    ->  
+    -> WHERE    PRESTECS.id_peli = EXEMPLARS.id_peli AND
+    ->          PRESTECS.num_exemplar = EXEMPLARS.num_exemplar AND
+    ->          dayofweek(PRESTECS.data_prestec)=4 ;
++-------------------------------------------+---------------+-------------+------------+
+| titol                                     | núm. exempl.  | data prest. | dia semana |
++-------------------------------------------+---------------+-------------+------------+
+| La busqueda                               |             3 | 2017-12-06  |          4 |
+| La terminal                               |             3 | 2017-12-06  |          4 |
+| Mar adentro                               |             3 | 2017-12-06  |          4 |
+| Colateral                                 |             3 | 2017-12-06  |          4 |
+| Los 4 fantásticos                         |             3 | 2017-12-06  |          4 |
+| Sin City                                  |             3 | 2017-12-06  |          4 |
+| Iron Man                                  |             3 | 2017-12-06  |          4 |
+| Los Vengadores                            |             3 | 2017-12-06  |          4 |
+| Los Vengadores: La era de Ultron          |             3 | 2017-12-06  |          4 |
+| La busqueda 2: El diario secreto          |             3 | 2017-12-06  |          4 |
+| Iron Man 2                                |             3 | 2017-12-06  |          4 |
+| Iron Man 3                                |             3 | 2017-12-06  |          4 |
+| Capitán América: El primer vengador       |             3 | 2017-12-06  |          4 |
+| Capitán América: El Soldado de Invierno   |             3 | 2017-12-06  |          4 |
+| Capitán América: Civil War                |             3 | 2017-12-06  |          4 |
++-------------------------------------------+---------------+-------------+------------+
+15 rows in set (0.01 sec)

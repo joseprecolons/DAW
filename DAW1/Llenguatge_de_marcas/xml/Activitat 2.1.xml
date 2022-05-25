@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<denuncies>
+    <denuncia>
+        <numero>00001</numero>
+        <data>20/09/2020</data>
+        <hora>16:00</hora>
+        <article>12</article>
+        <multa>200€</multa>
+        <punts>2</punts>
+        <lloc>Av Europa</lloc>
+        <fet>fsfsef</fet>
+        <grau>greu</grau>
+        <mesura>grua</mesura> 
+        <matricula>92830kjd</matricula>
+        <marca>honda</marca>
+        <model>c 300</model>
+        <color>blau</color>
+    </denuncia>
+</denuncies>

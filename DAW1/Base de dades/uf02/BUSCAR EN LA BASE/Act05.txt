@@ -1,0 +1,32 @@
+Llista les dades dels actors en una única columna amb el format:
+(<nom actor/actriu> és <home/dona>, va néixer l'any <any>, per tant té <XX> anys.) --> CONCAT
+Recorda que els anys són l'any actual menys l'any de naixement. --> YEAR(CURDATE()) - anynaix_actor
+
+
+mysql> SELECT CONCAT (nom_actor, " és ", sexe_actor, ", va néixer l'any ", anynaix_actor, ", per tant té
+", YEAR(CURDATE()) - anynaix_actor , " anys.") "Dades actors"  FROM ACTORS;
++-----------------------------------------------------------------------------+
+| Dades actors                                                                |
++-----------------------------------------------------------------------------+
+| Nicolas Cage és home, va néixer l'any 1964, per tant té 56 anys.            |
+| Diane Kruger és dona, va néixer l'any 1976, per tant té 44 anys.            |
+| Tom Hanks és home, va néixer l'any 1956, per tant té 64 anys.               |
+| Catherine Zeta-Jones és dona, va néixer l'any 1969, per tant té 51 anys.    |
+| Javier Bardem és home, va néixer l'any 1969, per tant té 51 anys.           |
+| Tom Cruise és home, va néixer l'any 1962, per tant té 58 anys.              |
+| Jamie Foxx és home, va néixer l'any 1967, per tant té 53 anys.              |
+| Jessica Alba és dona, va néixer l'any 1981, per tant té 39 anys.            |
+| Ioan Gruffudd és home, va néixer l'any 1973, per tant té 47 anys.           |
+| Robert Downey Jr. és home, va néixer l'any 1965, per tant té 55 anys.       |
+| Gwyneth Paltrow és dona, va néixer l'any 1972, per tant té 48 anys.         |
+| Chris Hemsworth és home, va néixer l'any 1983, per tant té 37 anys.         |
+| Mark Ruffalo és home, va néixer l'any 1967, per tant té 53 anys.            |
+| Chris Evans és home, va néixer l'any 1981, per tant té 39 anys.             |
+| Scarlett Johansson és dona, va néixer l'any 1984, per tant té 36 anys.      |
+| Jeremy Renner és home, va néixer l'any 1981, per tant té 39 anys.           |
+| James Spader és home, va néixer l'any 1960, per tant té 60 anys.            |
+| Michael Chiklis és home, va néixer l'any 1969, per tant té 51 anys.         |
+| Hayley Atwell és dona, va néixer l'any 1982, per tant té 38 anys.           |
+| Sebastian Stan és home, va néixer l'any 1982, per tant té 38 anys.          |
++-----------------------------------------------------------------------------+
+20 rows in set (0.00 sec)

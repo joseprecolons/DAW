@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<alumnes>
+    <alumne>
+        <codi>00001</codi>
+        <dni>837483748J</dni>
+        <nom>Lluis</nom>
+        <cognoms>García Perez</cognoms>
+        <data>12/7/2005</data>
+        <germans>3</germans>
+        <sexe>home</sexe>
+        <curs>3er eso</curs>
+        <tutor>Joan</tutor>
+        <materia>
+            <nommateria>fisica</nommateria>
+            <notaparcial>6</notaparcial>
+            <notaparcial>10</notaparcial>
+            <notafinal>8</notafinal> 
+        </materia>
+        <materia>
+            <nommateria>mates</nommateria>
+            <notaparcial>7</notaparcial>
+            <notaparcial>7</notaparcial>
+            <notafinal>7</notafinal>
+        </materia>
+        <materia>
+            <nommateria>llengua</nommateria>
+            <notaparcial>8</notaparcial>
+            <notaparcial>10</notaparcial>
+            <notafinal>9</notafinal>
+        </materia>
+    </alumne>
+</alumnes>

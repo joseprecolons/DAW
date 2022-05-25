@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#increase").click(function () {
+                if ($("#div1").width() > $("#div2").width()+10 && $("#div1").height() > $("#div2").height()+5) {
+                    $("#div2").width($("#div2").width() + 10);
+                    $("#div2").height($("#div2").height() + 5); 
+                } else {
+                    $("#div2").width($("#div1").width());
+                    $("#div2").height($("#div1").height()); 
+                }
+                
+            });
+
+            $("#reduce").click(function () {
+                $("#div2").width($("#div2").width() - 10);
+                $("#div2").height($("#div2").height() - 5);
+            });
+        });
+    </script>
+
+    <style>
+        #div1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 400px;
+            border: 1px solid #ef9a9a;
+            background-color: #ffebee;
+        }
+
+        #div2 {
+            height: 40px;
+            width: 80px;
+            border: 2px solid #9fa8da;
+            background-color: #e8eaf6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+            <div id="div2">
+        </div>
+    </div>
+
+    <button id="increase">Incrementar</button>
+    <button id="reduce">Disminuir</button>
+</body>
+
+</html>

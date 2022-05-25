@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Manipulació del DOM</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function(){
+                $("input").focus(function(){
+                    $("input").css("background-color", "blue")
+                });
+
+                $("input").blur(function(){
+                    $("input").css("background-color", "red")
+                });
+
+                
+
+        	});
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" name="nom" id="nom">
+        </form>
+    </body>
+</html>

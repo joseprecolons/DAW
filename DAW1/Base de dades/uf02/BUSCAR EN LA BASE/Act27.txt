@@ -1,0 +1,31 @@
+Torna a fer el llistat de l'activitat anterior tenint en compte que també es vol llistar el nombre de dies que ha tingut la peli i que l'import de cada peli són 2€/dia.
+
+mysql> SELECT  SOCIS.nom_soci Nom,
+    ->         DATEDIFF(PRESTECS.data_retorn,PRESTECS.data_prestec) dies,
+    ->         DATEDIFF(PRESTECS.data_retorn,PRESTECS.data_prestec) * 2 Import
+    ->  
+    -> FROM     PRESTECS
+    ->   INNER  JOIN SOCIS
+    ->      ON  PRESTECS.id_soci = SOCIS.id_soci;
++-----------------+------+--------+
+| Nom             | dies | Import |
++-----------------+------+--------+
+| Laura Loreto    |    1 |      2 |
+| Laura Loreto    |    1 |      2 |
+| Laura Loreto    |    1 |      2 |
+| Laura Loreto    |    1 |      2 |
+| Laura Loreto    |    2 |      4 |
+| Sandra Sampedro |    1 |      2 |
+| Sandra Sampedro |    1 |      2 |
+| Sandra Sampedro |    1 |      2 |
+| Sandra Sampedro |    1 |      2 |
+| Ariadna Moreno  |    1 |      2 |
+| Ariadna Moreno  |    1 |      2 |
+| Ariadna Moreno  |    1 |      2 |
+| Laura Gil       |    1 |      2 |
+| Laura Gil       |    1 |      2 |
+| Laura Gil       |    1 |      2 |
+| Laura Gil       |    1 |      2 |
+| Laura Gil       |    1 |      2 |
++-----------------+------+--------+
+17 rows in set (0.00 sec)

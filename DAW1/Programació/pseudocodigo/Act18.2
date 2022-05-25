@@ -1,0 +1,26 @@
+Proceso Act18
+	Definir num Como Entero;
+	Definir contador Como Entero;
+	Definir posibleprimer Como Entero;
+	Definir contadordivisor Como Entero;
+	contadordivisor <- 0;
+	posibleprimer <- 1;
+	contador <- 1;
+	Leer num;
+	Mientras contador <= num Hacer
+		contadordivisor <- 0;
+		posibleprimer <- 1;
+		Mientras posibleprimer <= num Hacer
+			Si contador % posibleprimer = 0 Entonces
+				contadordivisor <- contadordivisor + 1;
+			FinSi
+			posibleprimer <- posibleprimer + 1;
+		FinMientras
+		Si contadordivisor > 2 Entonces
+			Mostrar contador " no es primer";
+		SiNo
+			Mostrar contador " es primer";
+		FinSi
+		contador <- contador + 1;
+	FinMientras
+FinProceso

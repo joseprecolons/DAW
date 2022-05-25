@@ -1,0 +1,17 @@
+Llista els actors que han nascut després de l'any 1980.
+
+mysql> SELECT nom_actor "Nom", anynaix_actor "Any de neixement"
+    -> FROM ACTORS
+    -> WHERE anynaix_actor > 1980;
++--------------------+------------------+
+| Nom                | Any de neixement |
++--------------------+------------------+
+| Jessica Alba       |             1981 |
+| Chris Hemsworth    |             1983 |
+| Chris Evans        |             1981 |
+| Scarlett Johansson |             1984 |
+| Jeremy Renner      |             1981 |
+| Hayley Atwell      |             1982 |
+| Sebastian Stan     |             1982 |
++--------------------+------------------+
+7 rows in set (0.00 sec)

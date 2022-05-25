@@ -1,0 +1,14 @@
+Llista les pelis de "Paramount" i "Dreamworks" (sense fer servir IN).
+
+mysql> SELECT titol_peli "Pelicula", produ_peli "Productora"
+    -> FROM PELLICULES
+    -> WHERE produ_peli = "Paramount" OR produ_peli = "Dreamworks";
++--------------------+------------+
+| Pelicula           | Productora |
++--------------------+------------+
+| La terminal        | Dreamworks |
+| Colateral          | Paramount  |
+| Los 4 fantásticos  | Paramount  |
+| Sin City           | Dreamworks |
++--------------------+------------+
+4 rows in set (0.00 sec)
